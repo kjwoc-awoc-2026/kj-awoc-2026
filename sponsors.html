@@ -1,0 +1,518 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sponsors - 23rd KJWOC / 14th AWOC 2026</title>
+    <!-- Tailwind CSS (既存のレイアウト維持用) -->
+    <script src="https://cdn.tailwindcss.com"></script> 
+    <style>
+        .kjwoc-nav-link {
+            color: #ffffff !important; 
+            text-decoration: none !important; 
+            font-weight: bold !important; 
+            font-size: 16px !important; 
+            padding: 12px 8px; 
+            transition: all 0.2s ease-in-out; 
+            display: block; 
+            text-align: center; 
+            border-radius: 6px;
+        }
+        .kjwoc-nav-link:hover {
+            background-color: #ffffff !important; 
+            color: #003366 !important; 
+            transform: scale(1.05) translateY(-2px);
+        }
+        /* 言語切り替えボタン用の特別スタイル */
+        .lang-switch-btn {
+            background-color: #ffcc00 !important;
+            color: #003366 !important;
+        }
+        .lang-switch-btn:hover {
+            background-color: #ffffff !important;
+            color: #003366 !important;
+        }
+
+        /* レスポンシブ対応 */
+        @media (max-width: 1024px) {
+            .kjwoc-nav-link {
+                font-size: 14px !important;
+                padding: 10px 4px;
+            }
+        }
+        @media (max-width: 768px) {
+            .kjwoc-nav-link {
+                font-size: 13px !important;
+            }
+        }
+
+        /* フライヤー・フォーム用カスタムスタイル */
+        .flyer-wp-container { font-family: 'Helvetica Neue', Arial, sans-serif !important; width: 100% !important; max-width: none !important; }
+        .flyer-wp-container .gradient-bg { background: linear-gradient(135deg, #003366 0%, #006699 100%) !important; }
+        .flyer-wp-container .main-title { line-height: 1.2 !important; padding: 0 !important; margin: 0 !important; color: #ffffff !important; }
+        .flyer-wp-container .title-sub { font-size: 1.1rem; font-weight: 800; color: #00AEEF !important; display: block; margin-bottom: 0.6rem !important; text-transform: uppercase; letter-spacing: 0.05em; }
+        .flyer-wp-container .title-conf-name { display: block; font-size: 1.8rem; margin-bottom: 0.8rem !important; line-height: 1.3 !important; font-weight: 700; }
+        .flyer-wp-container .title-main-jp { display: block; font-size: 2.5rem; margin-top: 0.6rem !important; line-height: 1.1 !important; font-weight: 900; }
+        
+        .section-title {
+            font-size: 1.25rem;
+            font-weight: bold;
+            margin-bottom: 1.25rem;
+            color: #1e293b;
+            border-left: 4px solid #2563eb;
+            padding-left: 0.75rem;
+            line-height: 1.5;
+            text-align: left;
+            text-transform: uppercase;
+        }
+
+        /* 申込フォーム用簡易スタイル */
+        .npec-form-container {
+            background: #ffffff;
+            padding: 30px;
+            border-radius: 12px;
+            border: 1px solid #cbd5e1;
+        }
+        .npec-form-container h2 {
+            font-size: 24px;
+            color: #003366;
+            margin-top: 0;
+            margin-bottom: 10px;
+            font-weight: bold;
+        }
+        .npec-form-container h3 {
+            font-size: 18px;
+            color: #003366;
+            margin-top: 25px;
+            margin-bottom: 15px;
+            border-bottom: 1px solid #e2e8f0;
+            padding-bottom: 5px;
+            font-weight: bold;
+        }
+        .npec-form-group {
+            margin-bottom: 16px;
+        }
+        .npec-form-group label {
+            display: block;
+            font-size: 14px;
+            font-weight: bold;
+            color: #334155;
+            margin-bottom: 6px;
+        }
+        .npec-form-group input[type="text"],
+        .npec-form-group input[type="email"],
+        .npec-form-group input[type="number"],
+        .npec-form-group input[type="tel"],
+        .npec-form-container textarea {
+            width: 100%;
+            padding: 10px;
+            border: 1px solid #cbd5e1;
+            border-radius: 6px;
+            font-size: 15px;
+            box-sizing: border-box;
+        }
+        .npec-note {
+            font-size: 12px;
+            color: #64748b;
+            margin-top: 4px;
+        }
+        .npec-checkbox-group {
+            display: flex;
+            align-items: center;
+            gap: 8px;
+        }
+        .npec-checkbox-group input {
+            width: auto;
+        }
+        .npec-checkbox-group label {
+            margin-bottom: 0;
+            font-weight: normal;
+        }
+        .npec-submit-btn {
+            background: #2563eb;
+            color: white;
+            border: none;
+            padding: 14px 32px;
+            border-radius: 8px;
+            font-size: 16px;
+            font-weight: bold;
+            cursor: pointer;
+            transition: background 0.2s;
+            display: block;
+            width: 100%;
+            margin-top: 25px;
+        }
+        .npec-submit-btn:hover {
+            background: #1d4ed8;
+        }
+
+        @media (max-width: 768px) { 
+            .flyer-wp-container .title-conf-name { font-size: 1.4rem; }
+            .flyer-wp-container .title-main-jp { font-size: 1.8rem; }
+        }
+    </style>
+</head>
+<body style="margin: 0; padding: 0; background-color: #f4f7f9;">
+
+<div class="kjwoc-container" style="max-width: 1200px; margin: 0 auto; font-family: 'Helvetica Neue', Arial, sans-serif; overflow: hidden; position: relative;">
+    
+    <!-- ナビゲーションメニュー -->
+    <nav style="background: #003366; padding: 10px 0; margin: 20px auto 40px; width: 100%; border-radius: 8px; box-shadow: 0 4px 15px rgba(0,0,0,0.2); position: relative; z-index: 9999;">
+        <ul style="margin: 0; padding: 0; list-style: none; display: flex; align-items: center; justify-content: space-evenly; flex-wrap: wrap;">
+            <li style="min-width: 90px;"><a class="kjwoc-nav-link" href="index.html">Home</a></li>
+            <li style="min-width: 90px;"><a class="kjwoc-nav-link" href="about.html">About</a></li>
+            <li style="min-width: 90px;"><a class="kjwoc-nav-link" href="program.html">Program</a></li>
+            <li style="min-width: 100px;"><a class="kjwoc-nav-link" href="registration.html">Registration</a></li>
+            <li style="min-width: 100px;"><a class="kjwoc-nav-link" href="presenters.html">Presenters</a></li>
+            <li style="min-width: 90px;"><a class="kjwoc-nav-link" href="venue.html">Venue</a></li>
+            <li style="min-width: 90px;"><a class="kjwoc-nav-link" href="contact.html">Contact</a></li>
+            <li style="min-width: 110px;"><a class="kjwoc-nav-link" href="sponsors.html">Sponsors</a></li>
+            <!-- 言語切り替えボタン -->
+            <li style="min-width: 100px;"><a class="kjwoc-nav-link lang-switch-btn" href="./ja/sponsors.html">日本語</a></li>
+        </ul>
+    </nav>
+
+    <!-- メインコンテンツ (フライヤーコンテナ) -->
+    <div class="flyer-wp-container mx-auto bg-white shadow-xl rounded-2xl overflow-hidden mt-0 mb-4 border border-slate-200">
+        
+        <!-- ヘッダーバナー -->
+        <div class="gradient-bg text-white p-6 md:p-10 relative overflow-hidden">
+            <div class="absolute top-0 right-0 w-1/2 h-full opacity-10 pointer-events-none"> </div>
+            <div class="relative z-10 w-full">
+                <h1 class="main-title">
+                    <span class="title-sub">To Japanese companies/organizations</span> 
+                    <span class="title-group" style="display: flex; flex-direction: column; gap: 0;"> 
+                        <span class="title-conf-name"> The 23rd Korea-Japan Workshop on Ocean Color (KJWOC) /<br />The 14th Asian Workshop on Ocean Color (AWOC) </span> 
+                        <span class="title-main-jp">Call for Sponsorship</span> 
+                    </span>
+                </h1>
+            </div>
+        </div>
+
+        <div class="p-4 md:p-8 space-y-6">
+            <!-- イントロダクション -->
+            <div class="bg-blue-50/50 p-6 md:p-8 rounded-2xl border border-blue-100 text-slate-700 leading-relaxed">
+                <p class="text-base md:text-lg font-medium text-blue-950 tracking-wide mb-3">The Korea-Japan Workshop on Ocean Color (KJWOC) and the Asian Workshop on Ocean Color (AWOC) are held annually, rotating among host countries across Asia. In 2026, we are honored to host this joint event in Toyama, Japan.</p>
+                <p class="text-xs md:text-sm text-slate-400 italic text-center md:text-left" style="margin-top: 0 !important; margin-bottom: 0 !important; padding-top: 0 !important; padding-bottom: 0 !important; line-height: 1.3;">Previous Host Institutions: 2023 Japan (ISEE, Nagoya University), 2024 Indonesia (Udayana University), 2025 Korea (KIOST)</p>
+            </div>
+
+            <!-- 技術スコープ -->
+            <div class="p-6 md:p-8 bg-white rounded-xl border border-slate-100 shadow-sm">
+                <h3 class="text-lg md:text-xl font-bold text-blue-800 mb-4 border-l-4 border-blue-600 pl-3">【Technological Scope: Ocean Color Science】</h3>
+                <p class="text-sm md:text-base text-slate-700 leading-relaxed mb-4">Ocean color remote sensing is a technology used to observe the components of light reflected from the ocean surface. By analyzing this "ocean color" in detail, it is possible to remotely measure essential elements for understanding the marine environment, such as phytoplankton (chlorophyll-a), suspended sediments, and dissolved organic matter.</p>
+                <p class="text-sm md:text-base text-slate-700 leading-relaxed mb-6">The workshop encompasses a wide array of marine and coastal observation platforms—ranging from satellites in space and highly mobile aircraft to state-of-the-art drones for precision near-surface monitoring. Our scope extends beyond fundamental research to include practical applications and social implementations such as:</p>
+                <ul class="grid grid-cols-1 md:grid-cols-2 gap-3 ml-1 text-sm md:text-base text-slate-600">
+                    <li class="flex items-start"><span class="mr-2 select-none">🤖</span>Advanced Data Analysis with AI and Machine Learning</li>
+                    <li class="flex items-start"><span class="mr-2 select-none">🐟</span>Fisheries Support and Environmental Disaster Monitoring</li>
+                    <li class="flex items-start"><span class="mr-2 select-none">🌱</span>Seagrass Bed Assessment and Blue Carbon Applications</li>
+                    <li class="flex items-start"><span class="mr-2 select-none">🚀</span>Utilizing data by satellite sensors (e.g., GCOM-C/SGLI)</li>
+                    <li class="flex items-start"><span class="mr-2 select-none">🛰️</span>Current Status of Ocean Observation Missions</li>
+                    <li class="flex items-start"><span class="mr-2 select-none">🎯</span>Sensor Calibration and Validation</li>
+                    <li class="flex items-start"><span class="mr-2 select-none">💼</span>Commercial Applications by Private Enterprises</li>
+                </ul>
+            </div>
+
+            <!-- 歴史と意義 -->
+            <div class="p-6 md:p-8 bg-white rounded-xl border border-slate-100 shadow-sm">
+                <h3 class="text-lg md:text-xl font-bold text-blue-800 mb-4 border-l-4 border-blue-600 pl-3">【History and Significance: Over 20 Years of Connecting Asia】</h3>
+                <p class="text-sm md:text-base text-slate-700 leading-relaxed">The Korea-Japan Workshop on Ocean Color (KJWOC) started in 2003 in Nagasaki, Japan. For over 20 years, Japan and South Korea have taken turns to host the event, fostering a robust network of marine research in Asia. Since 2011, the workshop has expanded its reach by incorporating the Asian Workshop on Ocean Color (AWOC), welcoming participants from Southeast Asian nations. Today, it serves as a premier platform for participants to exchange cutting-edge information on ocean color remote sensing in the Asia-Pacific region.</p>
+            </div>
+
+            <!-- 富山ワークショップに向けて -->
+            <div class="p-6 md:p-8 bg-gradient-to-br from-white to-slate-50 rounded-xl border border-blue-100 shadow-sm" style="overflow: hidden;">
+                <h3 class="text-lg md:text-xl font-bold text-blue-800 mb-4 border-l-4 border-blue-600 pl-3">【Toward the 2026 Toyama Workshop】</h3>
+
+                <div class="float-none md:float-right w-full md:w-[225px] ml-0 md:ml-6 mb-4 md:mb-2">
+                    <div class="w-[225px] h-[190px] mx-auto overflow-hidden rounded shadow-sm bg-slate-100" style="cursor: pointer;" onclick="openAwocModal()">
+                        <img src="https://cearac.nowpap.org/nowpap/wp-content/uploads/2026/05/amaharasi.jpeg" alt="Toyama Workshop (Amaharashi Coast)" class="w-full h-full object-cover hover:opacity-90 transition-opacity" />
+                    </div>
+                    <div class="text-[10px] text-slate-400 text-right mt-1 pr-1">Photo courtesy of the Toyama Tourism Promotion Association</div>
+                </div>
+
+                <p class="text-sm md:text-base text-slate-700 leading-relaxed mb-5">The upcoming December workshop in Toyama is aimed at further advancing academic achievements for “Sustainable Seas.”</p>
+
+                <div class="border-t border-blue-200/60 pt-5 text-sm md:text-base text-blue-950 leading-relaxed m-0">
+                    <p class="m-0">To this end, we would greatly appreciate your valued sponsorship to help us achieve the objectives of this workshop. The event offers a unique opportunity for your organization to demonstrate corporate social responsibility, showcase your technologies, and build international networks with top-tier researchers and the next generation engineers from Asia.</p>
+                </div>
+            </div>
+
+            <!-- モーダルウィンドウ (画像拡大用) -->
+            <div id="awocImageModal" style="display: none; position: fixed; z-index: 99999; top: 0; left: 0; width: 100%; height: 100%; background-color: rgba(0,0,0,0.85); align-items: center; justify-content: center; opacity: 0; transition: opacity 0.3s ease;" onclick="closeAwocModal()">
+                <span style="position: absolute; top: 20px; right: 30px; color: #fff; font-size: 40px; font-weight: bold; cursor: pointer; user-select: none;">&times;</span>
+                <div style="max-width: 85%; max-height: 85%; position: relative;" onclick="event.stopPropagation()">
+                    <img src="https://cearac.nowpap.org/nowpap/wp-content/uploads/2026/05/amaharasi.jpeg" alt="Toyama Workshop (Amaharashi Coast) Enlarged" style="max-width: 100%; max-height: 80vh; display: block; border-radius: 4px; box-shadow: 0 4px 20px rgba(0,0,0,0.5);" />
+                    <div style="color: #fff; text-align: right; font-size: 12px; margin-top: 8px;">Photo courtesy of the Toyama Tourism Promotion Association</div>
+                </div>
+            </div>
+
+            <div class="p-0 md:p-2 space-y-10">
+                <!-- 開催概要 -->
+                <section>
+                    <h2 class="section-title">Event Overview</h2>
+                    <div class="space-y-4 text-base md:text-lg bg-slate-50 p-6 rounded-xl border border-slate-100">
+                        <div class="flex items-start border-b border-slate-200 pb-3"><span class="w-32 flex-shrink-0 text-slate-600 font-bold">Dates</span> <span class="text-slate-900 font-bold">December 8 (Tue) – December 11 (Fri), 2026</span></div>
+                        <div class="flex items-start border-b border-slate-200 pb-3"><span class="w-32 flex-shrink-0 text-slate-600 font-bold">Venue</span>
+                            <div class="text-slate-900">
+                                <p class="font-bold mb-1">Sky Hall, 3F Tower 111 (Triple One)</p>
+                                <p class="text-sm text-slate-500 mb-0">5-5 Ushijimashin-machi, Toyama City, Toyama, Japan</p>
+                            </div>
+                        </div>
+                        <div class="flex items-start border-b border-slate-200 pb-3"><span class="w-32 flex-shrink-0 text-slate-600 font-bold">Participants</span> <span class="text-slate-900 font-medium leading-relaxed">Experts in satellite remote sensing, marine biology, marine chemistry, and physical oceanography.</span></div>
+                        <div class="flex items-start"><span class="w-32 flex-shrink-0 text-slate-600 font-bold">Language</span> <span class="text-slate-900 font-semibold">English</span></div>
+                    </div>
+                </section>
+
+                <!-- 後援団体 -->
+                <section id="supporters">
+                    <h2 class="text-xl md:text-2xl font-bold text-slate-900 border-b-2 border-blue-800 pb-2 mb-6">Supporters</h2>
+                    <div class="bg-slate-50 p-5 md:p-6 rounded-xl border border-slate-200/60">
+                        <ul class="list-none pl-0 space-y-3 text-sm md:text-base text-slate-900 font-medium m-0">
+                            <li class="p-0 m-0"><a class="text-blue-700 hover:text-blue-900 hover:underline transition-colors inline" href="https://www.env.go.jp/en/" target="_blank" rel="noopener noreferrer">Ministry of the Environment, Japan</a></li>
+                            <li class="p-0 m-0"><a class="text-blue-700 hover:text-blue-900 hover:underline transition-colors inline" href="https://www-pref-toyama-jp.translate.goog/?_x_tr_sl=ja&amp;_x_tr_tl=en&amp;_x_tr_hl=ja" target="_blank" rel="noopener noreferrer">Toyama Prefecture</a></li>
+                            <li class="p-0 m-0"><a class="text-blue-700 hover:text-blue-900 hover:underline transition-colors inline" href="https://www.rssj.or.jp/eng/" target="_blank" rel="noopener noreferrer">The Remote Sensing Society of Japan (RSSJ)</a></li>
+                            <li class="p-0 m-0"><a class="text-blue-700 hover:text-blue-900 hover:underline transition-colors inline" href="https://kaiyo-gakkai.jp/jos/" target="_blank" rel="noopener noreferrer">The Oceanographic Society of Japan (JOS)</a></li>
+                            <li class="p-0 m-0"><a class="text-blue-700 hover:text-blue-900 hover:underline transition-colors inline" href="https://www.jsmst.org/index.html" target="_blank" rel="noopener noreferrer">Japan Society for Marine Surveys and Technology (JSMST)</a></li>
+                            <li class="p-0 m-0"><a class="text-blue-700 hover:text-blue-900 hover:underline transition-colors inline" href="https://global.jaxa.jp/" target="_blank" rel="noopener noreferrer">Japan Aerospace Exploration Agency (JAXA)</a></li>
+                        </ul>
+                    </div>
+                </section>
+
+                <!-- 協賛特典 -->
+                <section id="sponsorship-plan">
+                    <h2 class="text-xl md:text-2xl font-bold text-slate-900 border-b-2 border-blue-800 pb-2 mb-6">Sponsorship Benefits</h2>
+                    <div class="bg-slate-50 p-5 md:p-6 rounded-xl border border-slate-200/60">
+                        <div class="flex flex-col lg:flex-row gap-6 items-stretch">
+                            <!-- 金額バッジ -->
+                            <div class="flex flex-col sm:flex-row lg:flex-col items-start sm:items-center lg:items-center justify-start lg:justify-center lg:w-48 flex-shrink-0 gap-3">
+                                <div class="bg-slate-700 text-white px-5 py-3 rounded-xl shadow-sm inline-block">
+                                    <p class="m-0 text-lg md:text-xl font-bold whitespace-nowrap tracking-wide">30,000<span class="text-xs font-normal ml-1 opacity-90">JPY / Unit</span></p>
+                                </div>
+                                <p class="m-0 text-xs md:text-sm text-slate-600 leading-relaxed font-medium text-center sm:text-left lg:text-center">
+                                    Each sponsorship unit includes all the benefits listed on the right.
+                                </p>
+                            </div>
+
+                            <!-- 特典リスト -->
+                            <div class="grid grid-cols-1 md:grid-cols-2 gap-3 w-full">
+                                <div class="bg-white border border-slate-200/70 rounded-xl p-4 flex items-center shadow-2xs">
+                                    <svg class="w-5 h-5 text-blue-600 mr-3 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M5 13l4 4L19 7"></path></svg>
+                                    <p class="m-0"><span class="text-sm md:text-base font-bold text-slate-800">Company Logo &amp; Link on the Web</span></p>
+                                </div>
+                                <div class="bg-white border border-slate-200/70 rounded-xl p-4 flex items-center shadow-2xs">
+                                    <svg class="w-5 h-5 text-blue-600 mr-3 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M5 13l4 4L19 7"></path></svg>
+                                    <p class="m-0"><span class="text-sm md:text-base font-bold text-slate-800">Company Logo Display at the Venue</span></p>
+                                </div>
+                                <div class="bg-white border border-slate-200/70 rounded-xl p-4 flex items-center shadow-2xs">
+                                    <svg class="w-5 h-5 text-blue-600 mr-3 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M5 13l4 4L19 7"></path></svg>
+                                    <p class="m-0"><span class="text-sm md:text-base font-bold text-slate-800">Placement of Corporate Materials</span></p>
+                                </div>
+                                <div class="bg-white border border-slate-200/70 rounded-xl p-4 flex items-center shadow-2xs">
+                                    <svg class="w-5 h-5 text-blue-600 mr-3 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M5 13l4 4L19 7"></path></svg>
+                                    <p class="m-0"><span class="text-sm md:text-base font-bold text-slate-800">Attendance at the Reception</span></p>
+                                </div>
+                                <div class="bg-white border border-slate-200/70 rounded-xl p-4 flex items-center shadow-2xs">
+                                    <svg class="w-5 h-5 text-blue-600 mr-3 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M5 13l4 4L19 7"></path></svg>
+                                    <p class="m-0"><span class="text-sm md:text-base font-bold text-slate-800">Auditing the Workshop</span></p>
+                                </div>
+                                <div class="hidden md:block border border-transparent p-4"></div>
+                                <div class="bg-white border border-slate-200/70 rounded-xl p-4 flex items-center justify-between shadow-2xs">
+                                    <div class="flex items-center">
+                                        <svg class="w-5 h-5 text-orange-500 mr-3 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M5 13l4 4L19 7"></path></svg>
+                                        <p class="m-0"><span class="text-sm md:text-base font-bold text-slate-800">Oral Presentation</span></p>
+                                    </div>
+                                    <span class="bg-orange-500 text-white text-xs font-bold px-2.5 py-1 rounded-md ml-2 whitespace-nowrap shadow-xs">Optional</span>
+                                </div>
+                                <div class="bg-white border border-slate-200/70 rounded-xl p-4 flex items-center justify-between shadow-2xs">
+                                    <div class="flex items-center">
+                                        <svg class="w-5 h-5 text-orange-500 mr-3 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M5 13l4 4L19 7"></path></svg>
+                                        <p class="m-0"><span class="text-sm md:text-base font-bold text-slate-800">Poster Presentation</span></p>
+                                    </div>
+                                    <span class="bg-orange-500 text-white text-xs font-bold px-2.5 py-1 rounded-md ml-2 whitespace-nowrap shadow-xs">Optional</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+                <!-- 応募プロセス -->
+                <div class="mt-12 p-6 md:p-8 border border-slate-200 bg-slate-50/80 rounded-2xl flex flex-col lg:flex-row justify-between items-stretch gap-8 mb-8">
+                    <div class="flex-1 bg-white p-6 rounded-xl border border-slate-200 shadow-2xs">
+                        <h3 class="text-base md:text-lg font-bold text-blue-900 mt-0 mb-4 border-b-2 border-blue-50 pb-2">[ How to Apply ]</h3>
+                        <ol class="m-0 p-0 list-none space-y-3 text-sm md:text-base text-slate-700">
+                            <li class="flex items-start"><span class="bg-blue-600 text-white w-5 h-5 rounded-full flex items-center justify-center text-xs mr-3 flex-shrink-0 mt-0.5 font-bold">1</span>Please read the "<strong>Sponsorship Prospectus</strong>".</li>
+                            <li class="flex items-start"><span class="bg-blue-600 text-white w-5 h-5 rounded-full flex items-center justify-center text-xs mr-3 flex-shrink-0 mt-0.5 font-bold">2</span>Fill out the "<strong>Sponsorship Application Form</strong>" directly below.</li>
+                            <li class="flex items-start"><span class="bg-blue-600 text-white w-5 h-5 rounded-full flex items-center justify-center text-xs mr-3 flex-shrink-0 mt-0.5 font-bold">3</span>Review the information and click the button at the bottom of the page to submit.</li>
+                        </ol>
+                        <div class="mt-4 p-3 bg-blue-50/60 rounded-lg border border-blue-100">
+                            <p class="m-0 text-xs md:text-sm text-blue-900 font-bold leading-relaxed">After receiving your application, the Secretariat (NPEC) will contact you with further details, including payment methods.</p>
+                        </div>
+                    </div>
+                    <div class="lg:w-72 flex flex-col justify-center gap-3">
+                        <a class="flex items-center justify-center bg-orange-500 hover:bg-orange-600 text-white py-4 px-5 rounded-xl font-bold text-sm md:text-base shadow-sm transition-colors text-center no-underline whitespace-nowrap" href="https://cearac.nowpap.org/nowpap/wp-content/uploads/2026/06/趣意書.pdf" download="Sponsorship_Prospectus.pdf">📄 Sponsorship Prospectus (PDF)</a>
+                    </div>
+                </div>
+
+                <!-- 申込フォーム -->
+                <div id="npec-form-section">
+                    <div class="npec-form-container">
+                        <h2>Sponsorship Application Form</h2>
+                        <p style="font-size: 13px; color: #64748b;">Please enter the required information and click the "Proceed to Confirmation Screen" button at the bottom.</p>
+                        
+                        <form action="#" method="POST">
+                            <h3>1. Applicant Information (Company / Organization)</h3>
+                            <div class="npec-form-group">
+                                <label>Company / Organization Name <span style="color: red;">*</span></label>
+                                <input name="company" required type="text" placeholder="e.g., Company Name Co., Ltd." />
+                            </div>
+                            <div class="npec-form-group">
+                                <label>Department &amp; Title</label>
+                                <input name="dept" type="text" placeholder="e.g., Sales Department, Manager" />
+                            </div>
+                            <div class="npec-form-group">
+                                <label>Contact Person's Name <span style="color: red;">*</span></label>
+                                <input name="name" required type="text" placeholder="e.g., John Smith" />
+                            </div>
+                            <div class="npec-form-group">
+                                <label>Address (Postal Code / Zip Code)</label>
+                                <input name="zip" type="text" placeholder="e.g., 930-0856" />
+                            </div>
+                            <div class="npec-form-group">
+                                <label>Address (Street, Building, etc.)</label>
+                                <input name="address" type="text" placeholder="e.g., 5-5 Ushijimashinmachi, Toyama City, Toyama" />
+                            </div>
+                            <div class="npec-form-group">
+                                <label>Phone Number (TEL) <span style="color: red;">*</span></label>
+                                <input name="tel" required type="text" placeholder="e.g., +81-76-445-1571" />
+                            </div>
+                            <div class="npec-form-group">
+                                <label>FAX Number</label>
+                                <input name="fax" type="text" placeholder="e.g., +81-76-445-1581" />
+                            </div>
+                            <div class="npec-form-group">
+                                <label>Email Address <span style="color: red;">*</span></label>
+                                <input name="email" required type="email" placeholder="e.g., sample@example.com" />
+                                <div class="npec-note">* Invoices and other electronic data will be sent to this email address.</div>
+                            </div>
+
+                            <h3>2. Number of Units &amp; Benefit Information</h3>
+                            <div class="npec-form-group bg-slate-50 p-4 rounded-xl border border-slate-200">
+                                <label style="font-weight: bold; color: #005bac;">Number of Sponsorship Units <span style="color: red;">*</span></label>
+                                <div style="display: flex; align-items: center; gap: 10px; margin-top: 5px;">
+                                    <input id="npec_slots" name="slots" type="number" min="1" value="1" required style="width: 100px; font-weight: bold; text-align: center;" oninput="npecCalculateTotal()" />
+                                    <span class="font-bold">Unit(s)</span>
+                                    <span class="text-xs text-slate-500">(30,000 JPY per unit)</span>
+                                </div>
+                            </div>
+
+                            <div class="npec-form-group">
+                                <label>Target URL for Web Website Listing</label>
+                                <input name="logo_url" type="text" placeholder="e.g., https://www.example.com" />
+                                <div class="npec-note">* Please fill this out if you wish to use the "Company Logo &amp; Link on the Web" benefit.</div>
+                            </div>
+
+                            <div class="npec-form-group">
+                                <label>Details of Materials to be Placed at the Venue</label>
+                                <input name="docs_detail" type="text" placeholder="e.g., Company brochures, product pamphlets, novelty goods, etc." />
+                            </div>
+
+                            <div class="npec-form-group">
+                                <label>Name of Attendees for the Reception</label>
+                                <input name="party_name" type="text" placeholder="e.g., John Smith, Jane Doe" />
+                                <div class="npec-note">* If multiple people are attending, please separate their names with commas.</div>
+                            </div>
+
+                            <div class="npec-form-group">
+                                <label>Presentation Preferences (No additional fee required)</label>
+                                <div class="npec-checkbox-group" style="margin-bottom: 8px;">
+                                    <input id="npec_pres_oral" name="presentation_oral" type="checkbox" value="Oral Presentation Requested" />
+                                    <label for="npec_pres_oral">I would like to request an Oral Presentation</label>
+                                </div>
+                                <div class="npec-checkbox-group">
+                                    <input id="npec_pres_poster" name="presentation_poster" type="checkbox" value="Poster Presentation Requested" />
+                                    <label for="npec_pres_poster">I would like to request a Poster Presentation</label>
+                                </div>
+                            </div>
+
+                            <h3>3. Final Confirmation</h3>
+                            <div class="npec-price-box" style="background-color: #f1f5f9; padding: 15px; border-radius: 8px; border: 1px solid #cbd5e1; margin-top: 20px;">
+                                <div style="font-size: 14px; color: #475569; font-weight: bold;">Total Sponsorship Amount</div>
+                                <div style="font-size: 24px; font-weight: 800; color: #005bac;"><span id="npec-total-price">30,000</span> JPY</div>
+                            </div>
+
+                            <h3>4. Comments / Requests</h3>
+                            <div class="npec-form-group">
+                                <label>Requests or Questions (e.g., Specification for invoice billing name)</label>
+                                <textarea name="message" rows="4" placeholder="Please feel free to write your requests here."></textarea>
+                            </div>
+
+                            <button class="npec-submit-btn" type="submit">Proceed to Confirmation Screen</button>
+                        </form>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+        <!-- フッター -->
+        <footer class="p-6 md:p-8 border-t border-slate-200 bg-slate-50/80 rounded-2xl">
+            <div class="pt-6 text-center md:text-left flex flex-col md:flex-row items-center md:justify-between gap-6">
+                <div class="flex-1 text-center md:text-left">
+                    <p class="m-0 font-bold text-slate-900 text-lg md:text-xl">KJWOC / AWOC Secretariat</p>
+                    <p class="mt-1.5 mb-4 text-sm md:text-base text-slate-600 font-bold">Special Monitoring &amp; Coastal Environmental Assessment Regional Activity Centre (CEARAC) / Northwest Pacific Region Environmental Cooperation Center (NPEC)</p>
+                    <div class="text-xs md:text-sm text-slate-500 flex flex-wrap justify-center md:justify-start gap-x-5 gap-y-2.5 leading-relaxed">
+                        Tower 111 6F, 5-5 Ushijimashinmachi, Toyama City, Toyama 930-0856, Japan<br />
+                        E-mail: postmaster@cearac.nowpap.org
+                    </div>
+                </div>
+                <div class="flex-shrink-0 bg-white p-2 rounded-lg border border-slate-100 shadow-sm">
+                    <a class="inline-block opacity-95 hover:opacity-100 transition-opacity" href="https://www.npec.or.jp/" target="_blank" rel="noopener noreferrer">
+                        <img class="h-16 w-auto max-h-[64px] object-contain" src="https://cearac.nowpap.org/nowpap/wp-content/uploads/2025/03/82npec_LOGO.png" alt="NPEC" />
+                    </a>
+                </div>
+            </div>
+            <div class="text-center">
+                <p class="mt-8 mb-0 text-xs text-slate-400">&copy; 2026 Northwest Pacific Region Environmental Cooperation Center (NPEC)</p>
+            </div>
+        </footer>
+
+    </div>
+</div>
+
+<!-- 計算・モーダル制御用スクリプト -->
+<script>
+    /* 金額の動的計算用スクリプト */
+    function npecCalculateTotal() {
+        var slotsInput = document.getElementById('npec_slots');
+        var priceDisplay = document.getElementById('npec-total-price');
+        if (!slotsInput || !priceDisplay) return;
+
+        var slots = parseInt(slotsInput.value) || 0;
+        if (slots < 1) slots = 1; // 最小1ユニットにフォールバック
+
+        var pricePerUnit = 30000;
+        var totalAmount = slots * pricePerUnit;
+
+        // カンマ区切りで表示
+        priceDisplay.innerText = totalAmount.toLocaleString();
+    }
+
+    /* モーダルウィンドウ制御用スクリプト */
+    function openAwocModal() {
+        var modal = document.getElementById("awocImageModal");
+        modal.style.display = "flex";
+        setTimeout(function() { modal.style.opacity = "1"; }, 10);
+    }
+    function closeAwocModal() {
+        var modal = document.getElementById("awocImageModal");
+        modal.style.opacity = "0";
+        setTimeout(function() { modal.style.display = "none"; }, 300);
+    }
+
+    // ページ読み込み時に初期計算を実行
+    window.addEventListener('DOMContentLoaded', function() {
+        npecCalculateTotal();
+    });
+</script>
+
+</body>
+</html>
