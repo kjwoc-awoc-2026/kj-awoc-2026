@@ -1,0 +1,138 @@
+<div class="kjwoc-container" style="max-width: 1200px; margin: 0 auto; font-family: 'Helvetica Neue', Arial, sans-serif; overflow: hidden; position: relative;">
+    
+    <nav style="background: #003366; padding: 10px 0; margin: 20px auto 40px; width: 100%; border-radius: 8px; box-shadow: 0 4px 15px rgba(0,0,0,0.2); position: relative; z-index: 9999;">
+        <ul style="margin: 0; padding: 0 10px; list-style: none; display: flex; align-items: center; justify-content: space-evenly; flex-wrap: wrap; gap: 4px;">
+            <li style="min-width: 85px;"><a class="kjwoc-nav-link" href="index.html">トップ</a></li>
+            <li style="min-width: 85px;"><a class="kjwoc-nav-link" href="about.html">概要</a></li>
+            <li style="min-width: 105px;"><a class="kjwoc-nav-link" href="program.html">プログラム</a></li>
+            <li style="min-width: 105px;"><a class="kjwoc-nav-link" href="registration.html">参加登録</a></li>
+            <li style="min-width: 95px;"><a class="kjwoc-nav-link" href="speakers.html">発表者</a></li>
+            <li style="min-width: 105px;"><a class="kjwoc-nav-link" href="venue.html">開催場所</a></li>
+            <li style="min-width: 105px;"><a class="kjwoc-nav-link" href="contact.html">お問い合わせ</a></li>
+            <li style="min-width: 125px;"><a class="kjwoc-nav-link" href="sponsorship.html">ご協賛（日本）</a></li>
+            
+            <li style="min-width: 100px; padding-right: 10px;" class="kjwoc-lang-li">
+                <a class="lang-link" href="../en/about.html" style="color: #ffffff; text-decoration: none; font-size: 14px; font-weight: bold; padding: 6px 14px; background: rgba(255,255,255,0.15); border-radius: 20px; display: block; text-align: center; transition: all 0.2s ease-in-out;" onmouseover="this.style.background='#ffffff'; this.style.color='#003366';" onmouseout="this.style.background='rgba(255,255,255,0.15)'; this.style.color='#ffffff';">English</a>
+            </li>
+        </ul>
+    </nav>
+</div>
+
+<style>
+    .kjwoc-nav-link {
+        color: #ffffff !important; 
+        text-decoration: none !important; 
+        font-weight: bold !important; 
+        font-size: 16px !important; 
+        padding: 10px 6px; 
+        transition: all 0.2s ease-in-out; 
+        display: block; 
+        text-align: center; 
+        border-radius: 6px;
+    }
+    .kjwoc-nav-link:hover {
+        background-color: #ffffff !important; 
+        color: #003366 !important; 
+        transform: scale(1.05) translateY(-2px);
+    }
+    @media (max-width: 1024px) {
+        .kjwoc-nav-link {
+            font-size: 15px !important;
+            padding: 10px 4px;
+        }
+    }
+    @media (max-width: 865px) {
+        .kjwoc-lang-li {
+            margin-top: 5px;
+            margin-bottom: 5px;
+        }
+    }
+    @media (max-width: 768px) {
+        .kjwoc-nav-link {
+            font-size: 13px !important;
+        }
+    }
+</style>
+
+<section id="about" style="background: rgba(255, 255, 255, 0.95); border-radius: 12px; padding: 50px 40px; box-shadow: 0 5px 20px rgba(0,0,0,0.06); margin-bottom: 40px; border: 1px solid rgba(0, 40, 80, 0.1); font-family: 'Helvetica Neue', 'Hiragino Sans', 'Meiryo', Arial, sans-serif;">
+    <div style="max-width: 900px; margin: 0 auto;">
+        <h2 style="font-size: 32px !important; font-weight: bold; text-align: center; color: #003366 !important; margin: 0 0 12px 0 !important; border: none !important; line-height: 1.2;">ワークショップの概要</h2>
+        <p style="text-align: center; font-size: 18px; color: #004d99; font-weight: bold; margin-bottom: 40px; line-height: 1.4;">20年以上の歴史を持つ、アジア最大級の海洋リモートセンシング拠点</p>
+        
+        <div style="font-size: 16px; line-height: 1.8; color: #333333; text-align: left; margin-bottom: 40px;">
+            <p style="margin: 0 0 30px 0; text-align: justify;">本ワークショップは、2003年に長崎で産声を上げた「日韓海色ワークショップ（KJWOC）」に端を発します。20年以上にわたり日本と韓国が交互にホストを務め、アジアにおける海洋研究の強固なネットワークを築いてまいりました。2011年からは東南アジア諸国も加わる「アジア海色ワークショップ（AWOC）」を併催し、現在ではアジア太平洋地域を代表する海洋リモートセンシングの最重要コミュニティへと発展しています。</p>
+            
+            <div style="background-color: #f0f7ff; padding: 30px 25px; border-radius: 10px; border-left: 5px solid #003366; box-shadow: 0 2px 8px rgba(0,0,0,0.02);">
+                <h3 style="font-size: 21px; font-weight: bold; color: #003366; margin: 0 0 15px 0;">多様な技術と社会実装へのアプローチ</h3>
+                <p style="margin: 0 0 25px 0; font-size: 15px; line-height: 1.7; color: #333333; text-align: justify;">海色リモートセンシングは、海面で反射された光（スペクトル）を観測する技術です。「海の色」を詳しく分析することで、植物プランクトン（クロロフィルa）や浮遊堆積物、溶存有機物など、海洋環境を知る上で不可欠な要素をリモート（遠隔）から測定することができます。<br />本ワークショップは、宇宙からの人工衛星、機動力に優れた航空機、そして精密な近傍観測を可能にする最新のドローンまで多様な観測技術を駆使した海洋・沿岸域観測に関する発表の場となっています。その議論の対象は、以下のとおり、海洋環境の基礎研究に留まらず、実用的な社会実装まで多岐にわたります。</p>
+                
+                <ul style="list-style: none; padding: 0; margin: 0; display: grid; grid-template-columns: repeat(auto-fit, minmax(380px, 1fr)); gap: 20px 24px; font-size: 14.5px; color: #475569;">
+                    <li style="line-height: 1.6;"><strong style="color: #003366; display: block; font-size: 15.5px; margin-bottom: 4px;">🤖 AIおよび機械学習を用いた高度データ解析</strong>AIアルゴリズムを駆使し、海色データから長期環境トレンドや異常現象を高度に自動検知。</li>
+                    <li style="line-height: 1.6;"><strong style="color: #003366; display: block; font-size: 15.5px; margin-bottom: 4px;">🐟 水産業支援と環境防災モニタリング</strong>赤潮や水質汚染の早期発見体制を確立し、沿岸漁業への被害軽減や気候変動適応に貢献。</li>
+                    <li style="line-height: 1.6;"><strong style="color: #003366; display: block; font-size: 15.5px; margin-bottom: 4px;">🌱 藻場評価とブルーカーボンへの応用</strong>光学センサによるアマモ場等の精密マッピングを行い、炭素固定能力（ブルーカーボン）を定量評価。</li>
+                    <li style="line-height: 1.6;"><strong style="color: #003366; display: block; font-size: 15.5px; margin-bottom: 4px;">🚀 GCOM-C/SGLI等の宇宙インフラデータ活用</strong>JAXAの「しきさい」等の衛星観測データを活用し、水質・沿岸域マッピング技術を深化。</li>
+                    <li style="line-height: 1.6;"><strong style="color: #003366; display: block; font-size: 15.5px; margin-bottom: 4px;">🛰️ 海洋観測ミッションの現状</strong>現在の主要な地球観測衛星の稼働状況や取得データを整理・分析し、次世代の広域海洋監視体制の課題と方向性を提示。</li>
+                    <li style="line-height: 1.6;"><strong style="color: #003366; display: block; font-size: 15.5px; margin-bottom: 4px;">🎯 センサの校正・検証</strong>現場での実測データを用いた検証（バリデーション）や校正により、衛星センサの経年劣化を補正し、観測データの長期的な信頼性と精度を担保。</li>
+                    <li style="line-height: 1.6;"><strong style="color: #003366; display: block; font-size: 15.5px; margin-bottom: 4px;">💼 民間事業者による実利用</strong>高精度な海洋データをAPI等で提供し、洋上風力発電の適地選定や効率的な船舶ルート策定など、海洋ビジネスへの社会実装を促進。</li>
+                </ul>
+            </div>
+        </div>
+        
+        <p style="text-align: center; font-size: 18px; color: #003366; font-weight: bold; margin: 40px 0 20px 0;">前回（2025年）のワークショップの実績</p>
+        <div style="display: flex; justify-content: center; gap: 15px; flex-wrap: wrap; margin-top: 10px;">
+            <div style="flex: 1; min-width: 150px; max-width: 180px; background: linear-gradient(135deg, #445566, #223344); color: #ffffff; padding: 20px; border-radius: 10px; text-align: center; box-shadow: 0 4px 15px rgba(0,0,0,0.12);">
+                <div style="font-size: 34px; font-weight: 800; line-height: 1.1;">100+</div>
+                <div style="font-size: 13px; font-weight: 600; margin-top: 6px; opacity: 0.9; letter-spacing: 0.5px;">参加者</div>
+            </div>
+            <div style="flex: 1; min-width: 150px; max-width: 180px; background: linear-gradient(135deg, #445566, #223344); color: #ffffff; padding: 20px; border-radius: 10px; text-align: center; box-shadow: 0 4px 15px rgba(0,0,0,0.12);">
+                <div style="font-size: 34px; font-weight: 800; line-height: 1.1;">50+</div>
+                <div style="font-size: 13px; font-weight: 600; margin-top: 6px; opacity: 0.9; letter-spacing: 0.5px;">発表者</div>
+            </div>
+            <div style="flex: 1; min-width: 150px; max-width: 180px; background: linear-gradient(135deg, #445566, #223344); color: #ffffff; padding: 20px; border-radius: 10px; text-align: center; box-shadow: 0 4px 15px rgba(0,0,0,0.12);">
+                <div style="font-size: 34px; font-weight: 800; line-height: 1.1;">8</div>
+                <div style="font-size: 13px; font-weight: 600; margin-top: 6px; opacity: 0.9; letter-spacing: 0.5px;">セッション</div>
+            </div>
+            <div style="flex: 1; min-width: 150px; max-width: 180px; background: linear-gradient(135deg, #445566, #223344); color: #ffffff; padding: 20px; border-radius: 10px; text-align: center; box-shadow: 0 4px 15px rgba(0,0,0,0.12);">
+                <div style="font-size: 34px; font-weight: 800; line-height: 1.1;">10+</div>
+                <div style="font-size: 13px; font-weight: 600; margin-top: 6px; opacity: 0.9; letter-spacing: 0.5px;">国・地域</div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section id="supporters" style="background: rgba(255, 255, 255, 0.95); border-radius: 12px; padding: 50px 40px; box-shadow: 0 5px 20px rgba(0,0,0,0.06); margin-bottom: 40px; border: 1px solid rgba(0, 40, 80, 0.1); font-family: 'Helvetica Neue', 'Hiragino Sans', 'Meiryo', Arial, sans-serif;">
+    <div style="max-width: 900px; margin: 0 auto;">
+        <h2 style="font-size: 32px !important; font-weight: bold; text-align: center; color: #003366 !important; margin: 0 0 30px 0 !important; border: none !important; line-height: 1.2;">後援</h2>
+        <div style="background: #f8fafd; border: 1px solid #e2e8f0; border-radius: 8px; padding: 30px 40px; box-shadow: inset 0 1px 3px rgba(0,0,0,0.02);">
+            <ul style="list-style: none; padding: 0; margin: 0; font-size: 17px; line-height: 2.2; font-weight: bold; display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 5px 20px;">
+                <li style="text-align: left;"><a style="color: #004d99; text-decoration: none; transition: color 0.2s;" href="https://www.env.go.jp/" target="_blank" rel="noopener noreferrer" onmouseover="this.style.color='#002244'" onmouseout="this.style.color='#004d99'">環境省</a></li>
+                <li style="text-align: left;"><a style="color: #004d99; text-decoration: none; transition: color 0.2s;" href="https://pref.toyama.lg.jp/" target="_blank" rel="noopener noreferrer" onmouseover="this.style.color='#002244'" onmouseout="this.style.color='#004d99'">富山県</a></li>
+                <li style="text-align: left;"><a style="color: #004d99; text-decoration: none; transition: color 0.2s;" href="https://www.rssj.or.jp/" target="_blank" rel="noopener noreferrer" onmouseover="this.style.color='#002244'" onmouseout="this.style.color='#004d99'">一般社団法人日本リモートセンシング学会</a></li>
+                <li style="text-align: left;"><a style="color: #004d99; text-decoration: none; transition: color 0.2s;" href="https://kaiyo-gakkai.jp/" target="_blank" rel="noopener noreferrer" onmouseover="this.style.color='#002244'" onmouseout="this.style.color='#004d99'">一般社団法人 日本海洋学会</a></li>
+                <li style="text-align: left;"><a style="color: #004d99; text-decoration: none; transition: color 0.2s;" href="https://www.jsmst.org/" target="_blank" rel="noopener noreferrer" onmouseover="this.style.color='#002244'" onmouseout="this.style.color='#004d99'">海洋調査技術学会</a></li>
+                <li style="text-align: left;"><a style="color: #004d99; text-decoration: none; transition: color 0.2s;" href="https://www.jaxa.jp/" target="_blank" rel="noopener noreferrer" onmouseover="this.style.color='#002244'" onmouseout="this.style.color='#004d99'">宇宙航空研究開発機構（JAXA）</a></li>
+            </ul>
+        </div>
+    </div>
+</section>
+
+<section id="secretariat" style="background: rgba(255, 255, 255, 0.95); border-radius: 12px; padding: 35px 40px; box-shadow: 0 5px 15px rgba(0,0,0,0.05); margin-bottom: 40px; border: 1px solid rgba(0, 40, 80, 0.1); font-family: 'Helvetica Neue', Arial, sans-serif;">
+    <div style="max-width: 900px; margin: 0 auto;">
+        <div style="display: flex; align-items: center; justify-content: space-between; gap: 30px; flex-wrap: wrap;">
+            <div style="text-align: left; flex: 1; min-width: 280px; border-left: 4px solid #003366; padding-left: 25px;">
+                <h2 style="font-size: 20px !important; font-weight: bold; color: #5a4216 !important; margin: 0 0 8px 0 !important; border: none !important; letter-spacing: 0.5px; text-transform: uppercase;">🏢 事務局</h2>
+                <div style="color: #333333; font-size: 18px; line-height: 1.5; font-weight: 900; color: #003366; margin-bottom: 4px;">公益財団法人環日本海環境協力センター（NPEC）</div>
+                <div style="color: #475569; font-size: 15px; line-height: 1.4;">富山県富山市牛島新町5-5 タワー111 6階</div>
+            </div>
+            <div style="background: #ffffff; padding: 12px 24px; border-radius: 6px; display: inline-flex; align-items: center; justify-content: center; border: 1px solid #c9beaa; box-shadow: inset 0 1px 3px rgba(0,0,0,0.05); flex-shrink: 0;">
+                <a href="https://www.npec.or.jp/" target="_blank" rel="noopener noreferrer" style="line-height: 0;">
+                    <img src="https://cearac.nowpap.org/nowpap/wp-content/uploads/2025/03/82npec_LOGO.png" alt="NPEC 事務局" style="height: 42px; width: auto; display: block; border: none;">
+                </a>
+            </div>
+        </div>
+    </div>
+</section>
+
+<div style="padding: 24px 0; border-top: 1px solid #f1f5f9; text-align: center; margin-top: 20px;">
+    <p style="margin: 0; font-size: 12px; color: #94a3b8;">&copy; 2026 環日本海環境協力センター（NPEC）</p>
+</div>
