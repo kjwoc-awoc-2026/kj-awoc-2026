@@ -3,18 +3,148 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>International Conference 2026</title>
-    <link rel="stylesheet" href="style.css">
+    <title>23rd KJWOC / 14th AWOC 2026</title>
+    <style>
+        .kjwoc-nav-link {
+            color: #ffffff !important; 
+            text-decoration: none !important; 
+            font-weight: bold !important; 
+            font-size: 16px !important; /* 項目増とLangボタン追加のため18pxから16pxへ微調整 */
+            padding: 12px 8px; 
+            transition: all 0.2s ease-in-out; 
+            display: block; 
+            text-align: center; 
+            border-radius: 6px;
+        }
+        .kjwoc-nav-link:hover {
+            background-color: #ffffff !important; 
+            color: #003366 !important; 
+            transform: scale(1.05) translateY(-2px);
+        }
+        /* 言語切り替えボタン用の特別スタイル */
+        .lang-switch-btn {
+            background-color: #ffcc00 !important;
+            color: #003366 !important;
+        }
+        .lang-switch-btn:hover {
+            background-color: #ffffff !important;
+            color: #003366 !important;
+        }
+
+        /* レスポンシブ対応 */
+        @media (max-width: 1024px) {
+            .kjwoc-nav-link {
+                font-size: 14px !important;
+                padding: 10px 4px;
+            }
+        }
+        @media (max-width: 768px) {
+            .kjwoc-nav-link {
+                font-size: 13px !important;
+            }
+        }
+    </style>
 </head>
-<body>
-    <header>
-        <div class="lang-switch">
-            <a href="./ja/index.html">日本語</a>
+<body style="margin: 0; padding: 0; background-color: #fcfcfc;">
+
+<div class="kjwoc-container" style="max-width: 1200px; margin: 0 auto; font-family: 'Helvetica Neue', Arial, sans-serif; overflow: hidden; position: relative;">
+    
+    <nav style="background: #003366; padding: 10px 0; margin: 20px auto 40px; width: 100%; border-radius: 8px; box-shadow: 0 4px 15px rgba(0,0,0,0.2); position: relative; z-index: 9999;">
+        <ul style="margin: 0; padding: 0; list-style: none; display: flex; align-items: center; justify-content: space-evenly; flex-wrap: wrap;">
+            <li style="min-width: 90px;"><a class="kjwoc-nav-link" href="index.html">Home</a></li>
+            <li style="min-width: 90px;"><a class="kjwoc-nav-link" href="about.html">About</a></li>
+            <li style="min-width: 90px;"><a class="kjwoc-nav-link" href="program.html">Program</a></li>
+            <li style="min-width: 100px;"><a class="kjwoc-nav-link" href="registration.html">Registration</a></li>
+            <li style="min-width: 100px;"><a class="kjwoc-nav-link" href="presenters.html">Presenters</a></li>
+            <li style="min-width: 90px;"><a class="kjwoc-nav-link" href="venue.html">Venue</a></li>
+            <li style="min-width: 90px;"><a class="kjwoc-nav-link" href="contact.html">Contact</a></li>
+            <li style="min-width: 110px;"><a class="kjwoc-nav-link" href="sponsors.html">Sponsors</a></li>
+            <li style="min-width: 100px;"><a class="kjwoc-nav-link lang-switch-btn" href="./ja/index.html">日本語</a></li>
+        </ul>
+    </nav>
+
+    <div id="home" style="position: relative; width: 100%; height: 450px; overflow: hidden; border-radius: 12px 12px 0 0; box-shadow: 0 5px 15px rgba(0,0,0,0.1); background: #001a33;">
+        <img style="position: absolute; top: 50%; left: 50%; min-width: 100%; min-height: 100%; width: auto; height: auto; transform: translate(-50%, -50%); z-index: 0; object-fit: cover;" src="https://cearac.nowpap.org/nowpap/wp-content/uploads/2026/04/Bay.jpeg" alt="Toyama Bay" />
+        <div style="position: absolute; left: 15px; bottom: 15px; z-index: 10; color: rgba(255, 255, 255, 0.8); font-size: 11px; text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.9); pointer-events: none; font-family: sans-serif;">Photo courtesy of Toyama Prefectural Tourism Association</div>
+        <div style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; background: linear-gradient(to bottom, rgba(0, 20, 40, 0.1), rgba(0, 20, 40, 0.45)); flex-direction: column; display: flex; align-items: center; justify-content: center; text-align: center; color: #fffffa; padding: 20px; z-index: 1;">
+            <div style="perspective: 1000px; width: 100%; filter: saturate(1.1);">
+                <h1 style="font-size: 54px !important; font-weight: 900; margin: 0 0 10px 0 !important; letter-spacing: 2px; display: block; color: #fffaf0; line-height: 1.15; white-space: nowrap; text-shadow: 1.5px 1.5px 0px #806600, -1.5px -1.5px 0px #806600, 1.5px -1.5px 0px #806600, -1.5px 1.5px 0px #806600, 0px 0px 12px rgba(255, 235, 180, 0.4); filter: drop-shadow(0 0 5px rgba(255, 255, 255, 0.8)) drop-shadow(0 0 15px rgba(230, 200, 140, 0.4));">23rd KJWOC / 14th AWOC 2026</h1>
+            </div>
+            <p style="font-size: 20px; margin: 0 0 10px 0; color: #fffcf5 !important; font-weight: bold; text-shadow: 2px 2px 4px rgba(0,0,0,0.9), -1px -1px 2px rgba(0,0,0,0.7); letter-spacing: 0.5px; line-height: 1.3;">The 23rd Korea-Japan Workshop on Ocean Color /<br />The 14th Asian Workshop on Ocean Color</p>
+            <p style="font-size: 17px; margin: 0; color: #fffcf5 !important; font-style: italic; font-weight: 500; text-shadow: 2px 2px 5px rgba(0,0,0,0.95), -1px -1px 2px rgba(0,0,0,0.7); max-width: 850px; line-height: 1.45;">One of the largest international workshops in Asia dedicated to marine remote sensing research.</p>
         </div>
-    </header>
-    <main>
-        <h1>Welcome to the International Conference 2026</h1>
-        <p>This is the English top page.</p>
-    </main>
+    </div>
+
+    <div style="display: flex; flex-direction: column; gap: 18px; width: 100%; max-width: 850px; margin: 25px auto 0 auto; padding: 0 15px; box-sizing: border-box;">
+        
+        <div style="background: linear-gradient(135deg, #fffdf9, #f7f3e8) !important; border: 2px solid #baa88d; padding: 20px; border-radius: 10px; box-shadow: 0 4px 15px rgba(0,0,0,0.08); text-align: center;">
+            <div style="display: flex; flex-wrap: wrap; justify-content: center; align-items: center; gap: 10px 35px; color: #000000; font-size: 16px; line-height: 1.6;">
+                <div>
+                    <span style="font-weight: 800; color: #6e5220; font-size: 18px; margin-right: 5px;">📅 Date:</span><br />
+                    <strong style="color: #001a33; font-size: 21px; background: linear-gradient(transparent 55%, #ffd940 55%); padding: 2px 6px; font-weight: 900; white-space: nowrap;">Dec. 8 (Tue) – 11 (Fri), 2026</strong>
+                </div>
+                <div>
+                    <span style="font-weight: 800; color: #6e5220; font-size: 18px; margin-right: 5px;">📌 Venue:</span><br />
+                    <strong style="color: #001a33; font-size: 21px; background: linear-gradient(transparent 55%, #ffd940 55%); padding: 2px 6px; font-weight: 900; white-space: nowrap;">Toyama, Japan</strong>
+                </div>
+            </div>
+        </div>
+
+        <div style="background: linear-gradient(135deg, #fff6f6, #ffece5) !important; border: 1px solid #eba494; padding: 26px 24px; border-radius: 10px; box-shadow: 0 4px 12px rgba(0,0,0,0.04); text-align: left;">
+            <div style="display: flex; gap: 30px; flex-wrap: nowrap; justify-content: space-between; align-items: stretch;">
+                
+                <div style="flex: 1 1 0%; min-width: 0; text-align: left;">
+                    <div style="font-weight: 900; color: #001a33; font-size: 14.5px; margin: 0 0 15px 0; padding: 0; line-height: 1.3; border-left: 5px solid #b92c28; padding-left: 10px; text-transform: uppercase; letter-spacing: 0.3px; white-space: nowrap;">📋 Abstract Submission Deadline</div>
+                    <div style="margin: 0 0 0 15px; padding: 0; color: #000000; font-size: 14px; text-align: left;">
+                        <p style="margin: 0 0 14px 0; padding: 0; line-height: 1.1 !important;">
+                            <span style="font-weight: bold; color: #222; font-size: 14px;">• Participants requiring a visa:</span><br />
+                            <strong style="color: #b92c28; font-size: 21px; font-weight: 900; letter-spacing: 0.3px; display: inline-block; margin-top: 3px;">Sept. 10, 2026</strong>
+                        </p>
+                        <p style="margin: 0; padding: 0; line-height: 1.1 !important;">
+                            <span style="font-weight: bold; color: #222; font-size: 14px;">• Participants NOT requiring a visa:</span><br />
+                            <strong style="color: #b92c28; font-size: 21px; font-weight: 900; letter-spacing: 0.3px; display: inline-block; margin-top: 3px;">Sept. 24, 2026</strong>
+                        </p>
+                    </div>
+                </div>
+
+                <div style="width: 1px; background-color: #eba494; align-self: stretch; margin: 5px 0; flex-shrink: 0;"></div>
+
+                <div style="flex: 1 1 0%; min-width: 0; text-align: left;">
+                    <div style="font-weight: 900; color: #001a33; font-size: 14.5px; margin: 0 0 15px 0; padding: 0; line-height: 1.3; border-left: 5px solid #001a33; padding-left: 10px; text-transform: uppercase; letter-spacing: 0.3px; white-space: nowrap;">💻 Registration Deadline</div>
+                    <div style="margin: 0 0 0 15px; padding: 0; color: #000000; font-size: 14px; text-align: left;">
+                        <p style="margin: 0 0 14px 0; padding: 0; line-height: 1.1 !important;">
+                            <span style="font-weight: bold; color: #222; font-size: 14px;">• Participants requiring a visa:</span><br />
+                            <strong style="color: #b92c28; font-size: 21px; font-weight: 900; letter-spacing: 0.3px; display: inline-block; margin-top: 3px;">Sept. 10, 2026</strong>
+                        </p>
+                        <p style="margin: 0; padding: 0; line-height: 1.1 !important;">
+                            <span style="font-weight: bold; color: #222; font-size: 14px;">• Participants NOT requiring a visa:</span><br />
+                            <strong style="color: #b92c28; font-size: 21px; font-weight: 900; letter-spacing: 0.3px; display: inline-block; margin-top: 3px;">Oct. 2, 2026</strong>
+                        </p>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+        <div style="background: linear-gradient(135deg, #faf8f2, #efeade) !important; border: 1px solid #c9beaa; padding: 22px 25px; border-radius: 10px; box-shadow: 0 4px 10px rgba(0,0,0,0.04); display: flex; flex-wrap: wrap; justify-content: space-between; align-items: center; gap: 20px; text-align: left;">
+            <div style="text-align: left; flex: 1; min-width: 260px;">
+                <h3 style="font-size: 14px; margin: 0 0 8px 0; color: #735622; font-weight: bold; text-transform: uppercase; border-bottom: 2px solid #c9beaa; padding-bottom: 4px; text-align: left; display: inline-block; padding-right: 20px; letter-spacing: 0.5px;">Secretariat</h3>
+                <div style="color: #111111; font-size: 18px; line-height: 1.5; text-align: left; font-weight: bold; margin-top: 6px;">Northwest Pacific Region Environmental Cooperation Center (NPEC)</div>
+            </div>
+            <div style="background: rgba(255, 255, 255, 0.75); padding: 8px 18px; border-radius: 6px; display: inline-flex; align-items: center; justify-content: center; border: 1px solid #c9beaa; box-shadow: inset 0 1px 3px rgba(0,0,0,0.05);">
+                <a style="line-height: 0;" href="https://www.npec.or.jp/en/" target="_blank" rel="noopener noreferrer">
+                    <img style="height: 42px; width: auto; vertical-align: middle;" src="https://cearac.nowpap.org/nowpap/wp-content/uploads/2025/03/82npec_LOGO.png" alt="NPEC Secretariat" />
+                </a>
+            </div>
+        </div>
+
+    </div>
+
+    <div style="padding: 24px 0; border-top: 1px solid #f1f5f9; text-align: center; margin-top: 30px;">
+        <p style="margin: 0; font-size: 12px; color: #94a3b8;">© 2026 Northwest Pacific Region Environmental Cooperation Center (NPEC)</p>
+    </div>
+
+</div>
+
 </body>
 </html>
