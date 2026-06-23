@@ -1,21 +1,15 @@
-<div class="kjwoc-container" style="max-width: 1024px; margin: 0 auto; font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, 'Hiragino Kaku Gothic ProN', 'Hiragino Sans', Meiryo, sans-serif; overflow: hidden; position: relative;">
+<div class="kjwoc-container" style="max-width: 1200px; margin: 0 auto; font-family: 'Helvetica Neue', Arial, sans-serif; overflow: hidden; position: relative;">
     
-    <!-- ナビゲーションバー（他ページと完全統一） -->
     <nav style="background: #003366; padding: 10px 0; margin: 20px auto 40px; width: 100%; border-radius: 8px; box-shadow: 0 4px 15px rgba(0,0,0,0.2); position: relative; z-index: 9999;">
-        <ul style="margin: 0; padding: 0 10px; list-style: none; display: flex; align-items: center; justify-content: space-evenly; flex-wrap: wrap; gap: 4px;">
-            <li style="min-width: 85px;"><a class="kjwoc-nav-link" href="index.html">トップ</a></li>
-            <li style="min-width: 85px;"><a class="kjwoc-nav-link" href="outline.html">概要</a></li>
-            <li style="min-width: 105px;"><a class="kjwoc-nav-link" href="program.html">プログラム</a></li>
-            <li style="min-width: 105px;"><a class="kjwoc-nav-link" href="registration.html">参加登録</a></li>
-            <li style="min-width: 95px;"><a class="kjwoc-nav-link" href="speakers.html">発表者</a></li>
-            <li style="min-width: 105px;"><a class="kjwoc-nav-link" href="venue.html">開催場所</a></li>
-            <li style="min-width: 105px;"><a class="kjwoc-nav-link" href="contact.html">お問合せ</a></li>
-            <li style="min-width: 125px;"><a class="kjwoc-nav-link" href="sponsorship.html">協賛（日本）</a></li>
-            
-            <!-- 言語切り替え -->
-            <li style="min-width: 100px; padding-right: 10px;" class="kjwoc-lang-li">
-                <a class="lang-link" href="../en/program.html" style="color: #ffffff; text-decoration: none; font-size: 14px; font-weight: bold; padding: 6px 14px; background: rgba(255,255,255,0.15); border-radius: 20px; display: block; text-align: center; transition: all 0.2s ease-in-out;" onmouseover="this.style.background='#ffffff'; this.style.color='#003366';" onmouseout="this.style.background='rgba(255,255,255,0.15)'; this.style.color='#ffffff';">English</a>
-            </li>
+        <ul style="margin: 0; padding: 0; list-style: none; display: flex; align-items: center; justify-content: space-evenly; flex-wrap: wrap;">
+            <li style="min-width: 100px;"><a class="kjwoc-nav-link" href="https://cearac.nowpap.org/ja/?page_id=16566" target="_blank" rel="noopener noreferrer">トップ</a></li>
+            <li style="min-width: 100px;"><a class="kjwoc-nav-link" href="https://cearac.nowpap.org/ja/?page_id=16533" target="_blank" rel="noopener noreferrer">概要</a></li>
+            <li style="min-width: 100px;"><a class="kjwoc-nav-link" href="https://cearac.nowpap.org/ja/?page_id=16538" target="_blank" rel="noopener noreferrer">プログラム</a></li>
+            <li style="min-width: 100px;"><a class="kjwoc-nav-link" href="https://cearac.nowpap.org/ja/?page_id=16542" target="_blank" rel="noopener noreferrer">参加登録</a></li>
+            <li style="min-width: 100px;"><a class="kjwoc-nav-link" href="https://cearac.nowpap.org/ja/?page_id=16547" target="_blank" rel="noopener noreferrer">発表者</a></li>
+            <li style="min-width: 100px;"><a class="kjwoc-nav-link" href="https://cearac.nowpap.org/ja/?page_id=16551" target="_blank" rel="noopener noreferrer">開催場所</a></li>
+            <li style="min-width: 100px;"><a class="kjwoc-nav-link" href="https://cearac.nowpap.org/ja/?page_id=16556" target="_blank" rel="noopener noreferrer">お問い合わせ</a></li>
+            <li style="min-width: 110px;"><a class="kjwoc-nav-link" href="https://cearac.nowpap.org/ja/?page_id=16561" target="_blank" rel="noopener noreferrer">協賛（日本）</a></li>
         </ul>
     </nav>
 </div>
@@ -25,8 +19,8 @@
         color: #ffffff !important; 
         text-decoration: none !important; 
         font-weight: bold !important; 
-        font-size: 16px !important; 
-        padding: 10px 6px; 
+        font-size: 18px !important; 
+        padding: 12px 10px; 
         transition: all 0.2s ease-in-out; 
         display: block; 
         text-align: center; 
@@ -39,164 +33,156 @@
     }
     @media (max-width: 1024px) {
         .kjwoc-nav-link {
-            font-size: 15px !important;
-            padding: 10px 4px;
-        }
-    }
-    @media (max-width: 865px) {
-        .kjwoc-lang-li {
-            margin-top: 5px;
-            margin-bottom: 5px;
+            font-size: 16px !important;
+            padding: 10px 5px;
         }
     }
     @media (max-width: 768px) {
         .kjwoc-nav-link {
-            font-size: 13px !important;
+            font-size: 14px !important;
         }
     }
 </style>
 
 <script src="https://cdn.tailwindcss.com"></script>
+<style>
+    .flyer-wp-container { font-family: 'Helvetica Neue', Arial, sans-serif !important; width: 100% !important; max-width: none !important; }
+    .flyer-wp-container .gradient-bg { background: linear-gradient(135deg, #003366 0%, #006699 100%) !important; }
+    .flyer-wp-container .main-title { line-height: 1.2 !important; padding: 0 !important; margin: 0 !important; color: #ffffff !important; }
+    .flyer-wp-container .title-sub { font-size: 1.1rem; font-weight: 800; color: #00AEEF !important; display: block; margin-bottom: 0.6rem !important; text-transform: uppercase; letter-spacing: 0.05em; }
+    .flyer-wp-container .title-conf-name { display: block; font-size: 1.8rem; margin-bottom: 0.8rem !important; line-height: 1.3 !important; font-weight: 700; }
+    .flyer-wp-container .title-main-jp { display: block; font-size: 2.5rem; margin-top: 0.6rem !important; line-height: 1.1 !important; font-weight: 900; }
+    
+    .section-title {
+        font-size: 1.25rem;
+        font-weight: bold;
+        margin-bottom: 1.25rem;
+        color: #1e293b;
+        border-left: 4px solid #2563eb;
+        padding-left: 0.75rem;
+        line-height: 1.5;
+        text-align: left;
+        text-transform: uppercase;
+    }
 
-<!-- メインコンテンツ領域 -->
-<div class="max-w-5xl mx-auto px-4 md:px-6" style="font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, 'Hiragino Kaku Gothic ProN', 'Hiragino Sans', Meiryo, sans-serif;">
+    @media (max-width: 768px) { 
+        .flyer-wp-container .title-conf-name { font-size: 1.4rem; }
+        .flyer-wp-container .title-main-jp { font-size: 1.8rem; }
+    }
+</style>
 
-  <!-- 1. スケジュール（予定）セクション -->
-  <section id="schedule" class="bg-white rounded-2xl p-6 sm:p-10 shadow-md border border-slate-200 mb-8">
-      <div class="max-w-4xl mx-auto">
-          <h2 class="text-2xl sm:text-3xl font-bold text-center text-[#003366] mb-3 tracking-wide">スケジュール（予定）</h2>
-          <p class="text-center text-sm sm:text-base text-slate-600 mb-8 font-bold">※現時点での予定であり、一部変更になる場合があります。</p>
-          
-          <div class="bg-slate-50 border border-slate-200/80 rounded-xl p-4 sm:p-6 shadow-inner">
-              <table style="width: 100%; border-collapse: collapse; text-align: left; table-layout: fixed;">
-                  <thead>
-                      <tr style="border-bottom: 2px solid #003366; color: #002244; font-weight: bold;" class="text-base md:text-lg">
-                          <th style="padding: 14px 12px; width: 140px;">日程</th>
-                          <th style="padding: 14px 12px;">内容</th>
-                      </tr>
-                  </thead>
-                  <tbody class="text-base md:text-lg text-slate-900 font-semibold">
-                      <tr style="border-bottom: 1px solid #cbd5e1; background-color: rgba(255,255,255,0.5);">
-                          <td style="padding: 20px 12px; font-weight: 800; color: #003366; white-space: nowrap; width: 140px;">12月8日（火）</td>
-                          <td style="padding: 20px 12px; line-height: 1.7; tracking-wide;">チュートリアル</td>
-                      </tr>
-                      <tr style="border-bottom: 1px solid #cbd5e1;">
-                          <td style="padding: 20px 12px; font-weight: 800; color: #003366; white-space: nowrap; width: 140px;">12月9日（水）</td>
-                          <td style="padding: 20px 12px; line-height: 1.7; tracking-wide;">開会式 ・ 基調講演 ・ セッション（口頭/ポスター）</td>
-                      </tr>
-                      <tr style="border-bottom: 1px solid #cbd5e1; background-color: rgba(255,255,255,0.5);">
-                          <td style="padding: 20px 12px; font-weight: 800; color: #003366; white-space: nowrap; width: 140px;">12月10日（木）</td>
-                          <td style="padding: 20px 12px; line-height: 1.7; tracking-wide;">基調講演 ・ セッション（口頭/ポスター） ・ 懇親会</td>
-                      </tr>
-                      <tr>
-                          <td style="padding: 20px 12px; font-weight: 800; color: #003366; white-space: nowrap; width: 140px;">12月11日（金）</td>
-                          <td style="padding: 20px 12px; line-height: 1.7; tracking-wide;">セッション（口頭/ポスター） ・ 閉会式</td>
-                      </tr>
-                  </tbody>
-              </table>
-          </div>
-      </div>
-  </section>
+<section id="registration" style="background: #f4f7f9; padding: 40px 15px; font-family: 'Helvetica Neue', Arial, 'Hiragino Kaku Gothic ProN', 'BIZ UDPGothic', sans-serif; color: #333;">
+    <div style="max-width: 900px; margin: 0 auto;">
+        
+        <h2 style="font-size: 46px !important; font-weight: 700; font-style: italic; font-family: 'Georgia', serif; text-align: center; color: #003366 !important; margin: 0 0 10px 0 !important; border: none !important;">参加登録</h2>
+        
+        <div style="text-align: center; margin-bottom: 30px;">
+            <p style="display: inline-block; font-size: 19px; color: #2d3748; font-weight: 600; padding: 5px 20px; background: rgba(0, 51, 102, 0.05); border-radius: 4px; border-left: 4px solid #003366;">
+                発表者を含むすべての参加者は、以下のフォームより登録が必要です。
+            </p>
+        </div>
 
-  <!-- 2. チュートリアル セクション -->
-  <section id="tutorials" class="bg-white rounded-2xl p-6 sm:p-10 shadow-md border border-slate-200 mb-8">
-      <div class="max-w-4xl mx-auto">
-          <h2 class="text-2xl sm:text-3xl font-bold text-center text-[#003366] mb-6 tracking-wide">チュートリアル</h2>
-          
-          <div class="bg-sky-50/50 p-6 sm:p-8 rounded-xl border border-sky-200 shadow-sm text-slate-900">
-              <p class="font-bold text-xl sm:text-2xl text-[#001f3f] border-b border-sky-300 pb-2.5 mb-5 tracking-wide">
-                  リモートセンシングデータ解析トレーニング
-              </p>
-              <p class="mb-6 text-base md:text-lg leading-relaxed font-semibold text-slate-900">
-                  実地での解析スキル習得を目的としたチュートリアルを計2回開催する予定です。
-              </p>
-              
-              <ul class="space-y-4 text-base md:text-lg pl-1">
-                  <li class="flex items-start gap-3 leading-relaxed">
-                      <span class="text-[#003366] mt-2 text-xs">●</span>
-                      <div class="font-semibold text-slate-900">
-                          <strong class="font-bold text-black">講師：</strong> 寺内 元基 副主幹研究員 
-                          <span class="text-slate-700 font-medium block sm:inline sm:ml-1 text-sm sm:text-base">（公益財団法人 環日本海環境協力センター）</span>
-                      </div>
-                  </li>
-                  <li class="flex items-start gap-3 leading-relaxed">
-                      <span class="text-slate-400 mt-2 text-xs">●</span>
-                      <div class="font-semibold text-slate-900">
-                          <strong class="font-bold text-slate-700">講師：</strong> もう一人は未定 
-                          <span class="text-slate-500 font-medium ml-1 text-sm sm:text-base">（現在調整中）</span>
-                      </div>
-                  </li>
-              </ul>
-          </div>
-      </div>
-  </section>
+        <div style="background: #fff5f5; border: 2px solid #feb2b2; padding: 25px 30px; border-radius: 12px; margin-bottom: 35px; text-align: center; box-shadow: 0 4px 12px rgba(229, 62, 62, 0.08);">
+            <p style="margin: 0 0 15px 0; font-size: 18px; font-weight: 800; color: #c53030; text-transform: uppercase; letter-spacing: 1px;">
+                参加登録締切
+            </p>
+            
+            <p style="margin: 0 0 10px 0; font-size: 22px; color: #2d3748; font-weight: 600; line-height: 1.3;">
+                ビザ発給申請が必要な方：<span style="font-weight: 900; color: #e53e3e;">2026年 9月 10日</span>
+            </p>
+            
+            <p style="margin: 0; font-size: 22px; color: #2d3748; font-weight: 600; line-height: 1.3;">
+                ビザ発給申請が不要な方：<span style="font-weight: 900; color: #e53e3e;">2026年 10月 2日</span>
+            </p>
+        </div>
 
-  <!-- 3. 基調講演 セクション -->
-  <section id="speakers" class="bg-white rounded-2xl p-6 sm:p-10 shadow-md border border-slate-200 mb-8">
-      <div class="max-w-4xl mx-auto">
-          <h2 class="text-2xl sm:text-3xl font-bold text-center text-[#003366] mb-6 tracking-wide">基調講演</h2>
-          
-          <div class="bg-amber-50/40 p-6 sm:p-8 rounded-xl border border-amber-200 shadow-sm text-slate-900">
-              <p class="mb-6 text-base md:text-lg leading-relaxed font-semibold text-slate-900">
-                  トップランナーの研究者による基調講演を計2回開催する予定です。
-              </p>
-              
-              <div class="grid grid-cols-1 md:grid-cols-2 gap-5 items-stretch">
-                  <!-- 講師1 -->
-                  <div class="bg-white p-5 rounded-xl border border-slate-300 shadow-sm flex flex-col justify-between h-full">
-                      <div>
-                          <div class="text-xs font-bold text-amber-800 uppercase tracking-widest mb-1.5">👤 講師（第1回）</div>
-                          <div class="text-lg sm:text-xl font-bold text-[#001f3f] mb-2 tracking-wide">石坂 丞二 特任教授</div>
-                      </div>
-                      <div class="text-base md:text-lg text-slate-700 leading-relaxed font-medium border-t border-slate-200 pt-3 mt-4">
-                          国立大学法人東海国立大学機構名古屋大学<br>宇宙地球環境研究所
-                      </div>
-                  </div>
-                  
-                  <!-- 講師2 -->
-                  <div class="bg-slate-50 p-5 rounded-xl border border-dashed border-slate-300 flex flex-col justify-between h-full">
-                      <div>
-                          <div class="text-xs font-bold text-slate-500 uppercase tracking-widest mb-1.5">👤 講師（第2回）</div>
-                          <div class="text-lg sm:text-xl font-bold text-slate-600 tracking-wide mb-2">もう一人は未定</div>
-                      </div>
-                      <div class="text-base md:text-lg text-slate-500 leading-relaxed font-medium border-t border-dashed border-slate-200/60 pt-3 mt-4">
-                          （現在調整中。決定次第、本ページにて公開いたします）
-                      </div>
-                  </div>
-              </div>
-          </div>
-      </div>
-  </section>
+        <div style="background: #fff; border-radius: 12px; box-shadow: 0 5px 20px rgba(0,0,0,0.06); border: 1px solid rgba(0, 40, 80, 0.1); overflow: hidden; margin-bottom: 35px;">
+            
+            <div style="background: #fff0f0; border-bottom: 1px dashed #d9534f; padding: 15px; text-align: center;">
+                <div style="color: #d9534f; font-weight: 800; line-height: 1.5;">
+                    <div style="font-size: 18px; margin-bottom: 4px;">
+                        ⚠️ すべてのセッションは<strong>英語</strong>で行われます。
+                    </div>
+                    <div style="font-size: 15px; opacity: 0.9;">
+                        (会場プロジェクターに日本語翻訳字幕有り）
+                    </div>
+                </div>
+            </div>
 
-  <!-- 4. 懇親会 & その他セクション -->
-  <section id="social-event" class="bg-white rounded-2xl p-6 sm:p-10 shadow-md border border-slate-200 mb-8">
-      <div class="max-w-4xl mx-auto">
-          <h2 class="text-2xl sm:text-3xl font-bold text-center text-[#003366] mb-6 tracking-wide">懇親会 ・ その他</h2>
-          
-          <!-- 懇親会詳細カード -->
-          <div class="bg-emerald-50/40 p-6 sm:p-8 rounded-xl border border-emerald-200 shadow-sm text-slate-900 mb-6">
-              <p class="font-bold text-xl sm:text-2xl text-emerald-900 border-b border-emerald-200 pb-2.5 mb-4 tracking-wide">
-                  懇親会のご案内
-              </p>
-              <div class="space-y-3 text-base md:text-lg leading-relaxed font-semibold">
-                  <p><span class="text-emerald-700 font-bold">日時：</span>12月10日（木）18:30～（予定）</p>
-                  <p><span class="text-emerald-700 font-bold">会場：</span>タワー111（トリプルワン）アートギャラリーラウンジ「ル・二」<br>
-                     <span class="text-slate-500 text-sm sm:text-base font-medium block pl-0 sm:pl-12 mt-1">富山県富山市牛島新町5-5 タワー111 3階</span>
-                  </p>
-                  <p><span class="text-emerald-700 font-bold">対象：</span>講師、発表者、協賛企業など</p>
-              </div>
-          </div>
+            <div style="display: flex; flex-wrap: wrap; align-items: stretch;">
+                <div style="flex: 1; min-width: 300px; padding: 35px; border-right: 1px solid #f0f0f0; display: flex; flex-direction: column;">
+                    
+                    <div style="margin-bottom: 25px;">
+                        <h4 style="margin: 0 0 8px 0; color: #28a745; font-size: 20px; font-weight: bold; display: flex; align-items: center; gap: 8px;">
+                            <span>👛</span> 参加費無料
+                        </h4>
+                        <p style="margin: 0; font-size: 15px; color: #555; line-height: 1.6;">
+                            本ワークショップはすべての参加者が無料でご参加いただけます。この重要なイベントに、世界中からの研究者、学生、専門家の皆様がご参加いただけることを心より歓迎いたします。
+                        </p>
+                    </div>
 
-          <!-- 参加証明書情報（1行に修正） -->
-          <div class="bg-slate-50 p-5 rounded-xl border border-slate-200 flex items-center justify-between flex-wrap gap-2">
-              <span class="text-base md:text-lg font-bold text-slate-900 whitespace-nowrap">● 参加証明書（発表者・チュートリアル参加者）</span>
-              <span class="text-sm text-slate-600 font-medium">※必要な方は受付、または事務局までお申し出ください。</span>
-          </div>
-      </div>
-  </section>
+                    <div style="display: flex; align-items: center; gap: 12px; margin-bottom: 15px;">
+                        <span style="font-size: 24px;">🎁</span>
+                        <h3 style="margin: 0; color: #003366; font-size: 20px; font-weight: bold;">内容：</h3>
+                    </div>
+                    
+                    <div style="background: #f0f7ff; border: 1px solid #bee3f8; border-radius: 8px; padding: 20px; flex-grow: 1;">
+                        <ul style="list-style: none; padding: 0; margin: 0; font-size: 16px; color: #444; line-height: 2.1;">
+                            <li><span style="color: #28a745; font-weight: bold; margin-right: 8px;">✔</span> ワークショップへの参加</li>
+                            <li><span style="color: #28a745; font-weight: bold; margin-right: 8px;">✔</span> 会議資料</li>
+                            <li><span style="color: #28a745; font-weight: bold; margin-right: 8px;">✔</span> コーヒーブレイク・懇親会</li>
+                            <li><span style="color: #28a745; font-weight: bold; margin-right: 8px;">✔</span> 参加証明書（発表者・チュートリアル参加者）</li>
+                            <li><span style="color: #28a745; font-weight: bold; margin-right: 8px;">✔</span> ビザサポート</li>
+                        </ul>
+                    </div>
+                    <p style="margin: 15px 0 0 0; font-size: 15px; color: #c0392b; font-weight: bold; display: flex; align-items: center; gap: 6px;">
+                        <span>⚠️</span> ホテルの予約等は参加者自身で行ってください。
+                    </p>
+                    
+                    <div style="margin-top: 25px; display: flex; align-items: flex-start; gap: 12px; border-top: 1px solid #eee; padding-top: 15px;">
+                        <img src="https://cearac.nowpap.org/nowpap/wp-content/uploads/2025/03/82npec_LOGO.png" alt="NPEC" style="width: 35px; height: auto; opacity: 0.8; margin-top: 4px;">
+                        <div style="font-size: 13px; color: #666; line-height: 1.5;">
+                            <strong style="color: #333;">事務局:</strong><br>
+                            公益財団法人環日本海環境協力センター (NPEC)<br>
+                            富山県富山市牛島新町5-5 タワー111 6階
+                        </div>
+                    </div>
+                </div>
 
-  <!-- コピーライト（フッター） -->
-  <div class="py-6 border-t border-slate-200 text-center mt-12">
-      <p class="m-0 text-xs text-slate-500 font-medium">&copy; 2026 Northwest Pacific Region Environmental Cooperation Center (NPEC)</p>
-  </div>
-</div>
+                <div style="flex: 1; min-width: 300px; padding: 35px; background: #fafafa; display: flex; flex-direction: column;">
+                    <div style="display: flex; align-items: center; gap: 12px; margin-bottom: 20px;">
+                        <span style="font-size: 32px;">🍲</span>
+                        <h3 style="margin: 0; color: #003366; font-size: 24px; font-weight: bold;">懇親会：</h3>
+                    </div>
+                    
+                    <div style="background: #fff9f0; border: 1px solid #ffe3b3; border-radius: 8px; padding: 15px; margin-bottom: 15px;">
+                        <p style="margin: 0; font-size: 15px; color: #444; line-height: 1.8;">
+                            <strong>日時：</strong>12月10日（木）18:30～（予定）<br>
+                            <strong>会場：</strong>タワー111（トリプルワン）アートギャラリーラウンジ「ル・二」富山県富山市牛島新町5-5 タワー111 3階<br>
+                            <strong>対象：</strong>講師、発表者、協賛企業など
+                        </p>
+                    </div>
+
+                    <div style="position: relative; flex-grow: 1;">
+                        <img src="https://cearac.nowpap.org/nowpap/wp-content/uploads/2026/04/canal-scaled.jpg" alt="富岩運河環水公園" style="width: 100%; height: auto; display: block; border-radius: 8px; box-shadow: 0 4px 12px rgba(0,0,0,0.1);">
+                        <div style="text-align: right; font-size: 9px; color: #999; margin-top: 5px; font-style: italic;">
+                            🄫（公社）とやま観光推進機構
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div style="background: #fff; border-radius: 12px; box-shadow: 0 10px 30px rgba(0,0,0,0.1); border-top: 6px solid #003366; overflow: hidden;">
+            <div style="background: #003366; padding: 15px; text-align: center;">
+                <h3 style="color: #ffffff; font-size: 24px; margin: 0; font-weight: bold;">登録フォーム</h3>
+            </div>
+            <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSdAWchTMJG8G89zeityqSLS0SgMcDsTxN-rSLrEIiQAMIkTdQ/viewform?embedded=true" width="100%" height="1930" frameborder="0" marginheight="0" marginwidth="0" style="border: none; vertical-align: top;">読み込み中…</iframe>
+        </div>
+
+    </div>
+</section>
+
+<footer style="padding: 24px 0; border-top: 1px solid #f1f5f9; text-align: center;">
+    <p style="margin: 0; font-size: 12px; color: #94a3b8;">© 2026 環日本海環境協力センター（NPEC）</p>
+</footer>
