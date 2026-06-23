@@ -1,5 +1,6 @@
-<div class="kjwoc-container" style="max-width: 1200px; margin: 0 auto; font-family: 'Helvetica Neue', Arial, sans-serif; overflow: hidden; position: relative;">
+<div class="kjwoc-container" style="max-width: 1024px; margin: 0 auto; font-family: 'Helvetica Neue', Arial, sans-serif; overflow: hidden; position: relative;">
     
+    <!-- ナビゲーションバー（GitHub・静的ファイルリンク版） -->
     <nav style="background: #003366; padding: 10px 0; margin: 20px auto 40px; width: 100%; border-radius: 8px; box-shadow: 0 4px 15px rgba(0,0,0,0.2); position: relative; z-index: 9999;">
         <ul style="margin: 0; padding: 0 10px; list-style: none; display: flex; align-items: center; justify-content: space-evenly; flex-wrap: wrap; gap: 4px;">
             <li style="min-width: 85px;"><a class="kjwoc-nav-link" href="index.html">トップ</a></li>
@@ -11,6 +12,7 @@
             <li style="min-width: 105px;"><a class="kjwoc-nav-link" href="contact.html">お問合せ</a></li>
             <li style="min-width: 125px;"><a class="kjwoc-nav-link" href="sponsorship.html">協賛（日本）</a></li>
             
+            <!-- 言語切り替え -->
             <li style="min-width: 100px; padding-right: 10px;" class="kjwoc-lang-li">
                 <a class="lang-link" href="../index.html" style="color: #ffffff; text-decoration: none; font-size: 14px; font-weight: bold; padding: 6px 14px; background: rgba(255,255,255,0.15); border-radius: 20px; display: block; text-align: center; transition: all 0.2s ease-in-out;" onmouseover="this.style.background='#ffffff'; this.style.color='#003366';" onmouseout="this.style.background='rgba(255,255,255,0.15)'; this.style.color='#ffffff';">English</a>
             </li>
@@ -54,61 +56,89 @@
     }
 </style>
 
-<div style="width: 100%; max-width: 1100px; margin: 0 auto; font-family: 'Helvetica Neue', Arial, 'Hiragino Kaku Gothic ProN', 'Hiragino Sans', Meiryo, sans-serif;">
+<script src="https://cdn.tailwindcss.com"></script>
+
+<!-- メインコンテンツ（ご協賛ページと同一の最大幅 max-w-5xl で美しく整列） -->
+<div class="max-w-5xl mx-auto px-4 md:px-6" style="font-family: 'Helvetica Neue', Arial, 'Hiragino Kaku Gothic ProN', 'Hiragino Sans', Meiryo, sans-serif;">
   
-  <div id="home" style="position: relative; width: 100%; height: 450px; overflow: hidden; border-radius: 12px 12px 0 0; box-shadow: 0 5px 15px rgba(0,0,0,0.1); background: #001a33;">
+  <!-- メインビジュアルセクション -->
+  <div id="home" style="position: relative; width: 100%; height: 480px; overflow: hidden; border-radius: 16px; box-shadow: 0 10px 25px -5px rgba(0,0,0,0.15); background: #001a33;">
     <img src="https://cearac.nowpap.org/nowpap/wp-content/uploads/2026/04/Bay.jpeg" alt="Toyama Bay" style="position: absolute; top: 50%; left: 50%; min-width: 100%; min-height: 100%; width: auto; height: auto; transform: translate(-50%, -50%); z-index: 0; object-fit: cover;">
-    <div style="position: absolute; left: 15px; bottom: 15px; z-index: 10; color: rgba(255, 255, 255, 0.8); font-size: 11px; text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.9); pointer-events: none; font-family: sans-serif;">写真提供：とやま観光推進機構</div>
-    <div style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; background: linear-gradient(to bottom, rgba(0, 20, 40, 0.1), rgba(0, 20, 40, 0.45)); flex-direction: column; display: flex; align-items: center; justify-content: center; text-align: center; color: #fffffa; padding: 20px; z-index: 1;">
-      <div style="perspective: 1000px; width: 100%; filter: saturate(1.1);"><h1 style="font-size: 54px !important; font-weight: 900; margin: 0 0 10px 0 !important; letter-spacing: 2px; display: block; color: #fffaf0; line-height: 1.15; white-space: nowrap; text-shadow: 1.5px 1.5px 0px #806600, -1.5px -1.5px 0px #806600, 1.5px -1.5px 0px #806600, -1.5px 1.5px 0px #806600, 0px 0px 12px rgba(255, 235, 180, 0.4); filter: drop-shadow(0 0 5px rgba(255, 255, 255, 0.8)) drop-shadow(0 0 15px rgba(230, 200, 140, 0.4));">23rd KJWOC / 14th AWOC 2026</h1></div>
-      <p style="font-size: 20px; margin: 0 0 10px 0; color: #fffcf5 !important; font-weight: bold; text-shadow: 2px 2px 4px rgba(0,0,0,0.9), -1px -1px 2px rgba(0,0,0,0.7); letter-spacing: 0.5px; line-height: 1.3;">第23回 日韓海色ワークショップ /<br>第14回 アジア海色ワークショップ</p>
-      <p style="font-size: 17px; margin: 0; color: #fffcf5 !important; font-style: italic; font-weight: 500; text-shadow: 2px 2px 5px rgba(0,0,0,0.95), -1px -1px 2px rgba(0,0,0,0.7); max-width: 850px; line-height: 1.45;">海洋リモートセンシング研究を専門とする、アジア最大級の国際ワークショップです。</p>
+    <div style="position: absolute; right: 15px; bottom: 15px; z-index: 10; color: rgba(255, 255, 255, 0.7); font-size: 11px; text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.8); pointer-events: none;">写真提供：とやま観光推進機構</div>
+    
+    <!-- オーバーレイグラデーションと文字コンテナ -->
+    <div style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; background: linear-gradient(to bottom, rgba(0, 26, 51, 0.25), rgba(0, 26, 51, 0.65)); flex-direction: column; display: flex; align-items: center; justify-content: center; text-align: center; color: #ffffff; padding: 24px; z-index: 1;">
+      
+      <!-- 英語大会名 -->
+      <div style="perspective: 1000px; width: 100%; filter: saturate(1.1);">
+        <h1 class="text-3xl sm:text-4xl md:text-5xl font-black tracking-wider text-white" style="margin: 0 0 16px 0 !important; line-height: 1.1; text-shadow: 0 4px 12px rgba(0,0,0,0.5);">
+          23rd KJWOC / 14th AWOC 2026
+        </h1>
+      </div>
+      
+      <!-- 日本語大会名（背景にシャドウを加えて強力に強調） -->
+      <div class="bg-slate-950/40 backdrop-blur-[2px] px-6 py-3 rounded-xl border border-white/10" style="margin-bottom: 18px; max-width: 780px;">
+        <p class="text-lg sm:text-xl md:text-2xl font-black text-amber-300 tracking-wide" style="margin: 0; line-height: 1.4; text-shadow: 1px 1px 3px rgba(0,0,0,0.8);">
+          第23回 日韓海色ワークショップ /<br class="block sm:hidden" /> 第14回 アジア海色ワークショップ
+        </p>
+      </div>
+      
+      <!-- キャッチコピー -->
+      <p class="text-sm sm:text-base md:text-lg font-medium text-slate-100 max-w-3xl" style="margin: 0; line-height: 1.5; text-shadow: 2px 2px 6px rgba(0,0,0,0.9);">
+        海洋リモートセンシング研究を専門とする、アジア最大級の国際ワークショップです。
+      </p>
     </div>
   </div>
 
-  <div style="display: flex; flex-direction: column; gap: 20px; width: 100%; max-width: 800px; margin: 25px auto 0 auto; padding: 0 15px; box-sizing: border-box;">
+  <!-- 下部インフォメーションエリア（中央寄せの幅を最大850pxに制限して可読性を担保） -->
+  <div style="display: flex; flex-direction: column; gap: 24px; width: 100%; max-width: 850px; margin: 30px auto 0 auto; box-sizing: border-box;">
     
-    <div style="background: linear-gradient(135deg, #fffdf9, #f7f3e8) !important; border: 2px solid #baa88d; padding: 24px 20px; border-radius: 10px; box-shadow: 0 4px 15px rgba(0,0,0,0.08); text-align: center;">
-      <div style="display: flex; flex-wrap: wrap; justify-content: center; align-items: center; gap: 16px 45px; color: #000000;">
+    <!-- 開催期日・開催地 -->
+    <div style="background: linear-gradient(135deg, #fffdf9, #fcfaf2) !important; border: 2px solid #baa88d; padding: 24px; border-radius: 12px; box-shadow: 0 4px 20px rgba(0,0,0,0.06); text-align: center;">
+      <div style="display: flex; flex-wrap: wrap; justify-content: center; align-items: center; gap: 16px 40px; color: #000000;">
         <div style="line-height: 1.4;">
-          <span style="font-weight: 900; color: #5a4216; font-size: 18px; margin-right: 8px; vertical-align: middle;">📅 開催期日:</span> 
-          <strong style="color: #001a33; font-size: 23px; background: linear-gradient(transparent 50%, #ffd940 50%); padding: 2px 6px; font-weight: 900; white-space: nowrap; vertical-align: middle;">2026年 12月 8日(火) ～ 11日(金)</strong>
+          <span style="font-weight: 800; color: #5a4216; font-size: 16px; margin-right: 6px; vertical-align: middle;">📅 開催期日:</span> 
+          <strong class="text-lg sm:text-xl md:text-2xl" style="color: #001a33; background: linear-gradient(transparent 55%, #ffd940 55%); padding: 2px 4px; font-weight: 900; white-space: nowrap; vertical-align: middle;">2026年 12月 8日(火) ～ 11日(金)</strong>
         </div>
         <div style="line-height: 1.4;">
-          <span style="font-weight: 900; color: #5a4216; font-size: 18px; margin-right: 8px; vertical-align: middle;">📌 開催地:</span> 
-          <strong style="color: #001a33; font-size: 23px; background: linear-gradient(transparent 50%, #ffd940 50%); padding: 2px 6px; font-weight: 900; white-space: nowrap; vertical-align: middle;">富山県富山市</strong>
+          <span style="font-weight: 800; color: #5a4216; font-size: 16px; margin-right: 6px; vertical-align: middle;">📌 開催地:</span> 
+          <strong class="text-lg sm:text-xl md:text-2xl" style="color: #001a33; background: linear-gradient(transparent 55%, #ffd940 55%); padding: 2px 4px; font-weight: 900; white-space: nowrap; vertical-align: middle;">富山県富山市</strong>
         </div>
       </div>
     </div>
 
-    <div style="background: linear-gradient(135deg, #fff6f6, #ffece5) !important; border: 1px solid #eba494; padding: 28px 24px; border-radius: 10px; box-shadow: 0 4px 12px rgba(0,0,0,0.04); text-align: left;">
-      <div style="display: flex; gap: 25px; flex-wrap: wrap;">
+    <!-- 期限スケジュールカード -->
+    <div style="background: linear-gradient(135deg, #fffcfc, #fff4f0) !important; border: 1px solid #eba494; padding: 30px 24px; border-radius: 12px; box-shadow: 0 4px 15px rgba(0,0,0,0.03); text-align: left;">
+      <div style="display: flex; gap: 24px; flex-wrap: wrap;">
         
-        <div style="flex: 1; min-width: 285px; text-align: left;">
-          <div style="font-weight: 900; color: #001a33; font-size: 16px; margin: 0 0 15px 0; padding: 0; line-height: 1.3; border-left: 5px solid #b92c28; padding-left: 8px; letter-spacing: 0.2px; white-space: nowrap;">📋 アブストラクト（要旨）提出期限</div>
-          <div style="margin: 0 0 0 13px; padding: 0; color: #000000; font-size: 15px; text-align: left;">
-            <p style="margin: 0 0 14px 0; padding: 0; line-height: 1.05 !important;">
-              <span style="font-weight: 900; color: #333333; font-size: 15px;">・ビザ申請が必要な方:</span><br>
+        <!-- アブストラクト期限 -->
+        <div style="flex: 1; min-width: 280px; text-align: left;">
+          <div style="font-weight: 900; color: #001a33; font-size: 16px; margin: 0 0 16px 0; padding: 0; line-height: 1.3; border-left: 5px solid #b92c28; padding-left: 10px; letter-spacing: 0.2px; white-space: nowrap;">📋 アブストラクト（要旨）提出期限</div>
+          <div style="margin-left: 10px; padding: 0; color: #000000; font-size: 15px;">
+            <p style="margin: 0 0 14px 0; padding: 0; line-height: 1.2 !important;">
+              <span style="font-weight: 700; color: #475569; font-size: 14px;">・ビザ申請が必要な方:</span><br>
               <strong style="color: #b92c28; font-size: 22px; font-weight: 900; letter-spacing: 0.5px; display: inline-block; margin-top: 2px;">2026年 9月 10日</strong>
             </p>
-            <p style="margin: 0; padding: 0; line-height: 1.05 !important;">
-              <span style="font-weight: 900; color: #333333; font-size: 15px;">• ビザ申請が不要な方:</span><br>
+            <p style="margin: 0; padding: 0; line-height: 1.2 !important;">
+              <span style="font-weight: 700; color: #475569; font-size: 14px;">・ビザ申請が不要な方:</span><br>
               <strong style="color: #b92c28; font-size: 22px; font-weight: 900; letter-spacing: 0.5px; display: inline-block; margin-top: 2px;">2026年 9月 24日</strong>
             </p>
           </div>
         </div>
         
-        <div style="width: 1px; background-color: #eba494; align-self: stretch; margin: 5px 0;"></div>
+        <!-- 中央区切り線（スマホ時は非表示） -->
+        <div class="hidden md:block" style="width: 1px; background-color: #eba494; align-self: stretch; margin: 5px 0;"></div>
         
-        <div style="flex: 1; min-width: 285px; text-align: left;">
-          <div style="font-weight: 900; color: #001a33; font-size: 16px; margin: 0 0 15px 0; padding: 0; line-height: 1.3; border-left: 5px solid #001a33; padding-left: 8px; letter-spacing: 0.2px; white-space: nowrap;">💻 参加登録期限</div>
-          <div style="margin: 0 0 0 13px; padding: 0; color: #000000; font-size: 15px; text-align: left;">
-            <p style="margin: 0 0 14px 0; padding: 0; line-height: 1.05 !important;">
-              <span style="font-weight: 900; color: #333333; font-size: 15px;">・ビザ申請が必要な方:</span><br>
+        <!-- 参加登録期限 -->
+        <div style="flex: 1; min-width: 280px; text-align: left;">
+          <div style="font-weight: 900; color: #001a33; font-size: 16px; margin: 0 0 16px 0; padding: 0; line-height: 1.3; border-left: 5px solid #001a33; padding-left: 10px; letter-spacing: 0.2px; white-space: nowrap;">💻 参加登録期限</div>
+          <div style="margin-left: 10px; padding: 0; color: #000000; font-size: 15px;">
+            <p style="margin: 0 0 14px 0; padding: 0; line-height: 1.2 !important;">
+              <span style="font-weight: 700; color: #475569; font-size: 14px;">・ビザ申請が必要な方:</span><br>
               <strong style="color: #b92c28; font-size: 22px; font-weight: 900; letter-spacing: 0.5px; display: inline-block; margin-top: 2px;">2026年 9月 10日</strong>
             </p>
-            <p style="margin: 0; padding: 0; line-height: 1.05 !important;">
-              <span style="font-weight: 900; color: #333333; font-size: 15px;">• ビザ申請が不要な方:</span><br>
+            <p style="margin: 0; padding: 0; line-height: 1.2 !important;">
+              <span style="font-weight: 700; color: #475569; font-size: 14px;">・ビザ申請が不要な方:</span><br>
               <strong style="color: #b92c28; font-size: 22px; font-weight: 900; letter-spacing: 0.5px; display: inline-block; margin-top: 2px;">2026年 10月 2日</strong>
             </p>
           </div>
@@ -117,21 +147,23 @@
       </div>
     </div>
       
-    <div style="background: linear-gradient(135deg, #faf8f2, #efeade) !important; border: 1px solid #c9beaa; padding: 24px 20px; border-radius: 10px; box-shadow: 0 4px 10px rgba(0,0,0,0.04); display: flex; flex-wrap: wrap; justify-content: space-between; align-items: center; gap: 15px; text-align: left;">
+    <!-- 事務局インフォメーション -->
+    <div style="background: linear-gradient(135deg, #fafaf6, #f4f2ea) !important; border: 1px solid #c9beaa; padding: 24px; border-radius: 12px; box-shadow: 0 4px 12px rgba(0,0,0,0.02); display: flex; flex-wrap: wrap; justify-content: space-between; align-items: center; gap: 20px; text-align: left;">
       <div style="text-align: left; flex: 1; min-width: 260px;">
-        <h3 style="font-size: 16px; margin: 0 0 8px 0; color: #5a4216; font-weight: 900; text-transform: uppercase; border-bottom: 2px solid #c9beaa; padding-bottom: 5px; text-align: left; display: inline-block; padding-right: 20px; letter-spacing: 0.5px;">事務局</h3>
-        <div style="color: #000000; font-size: 18px; line-height: 1.4; text-align: left; font-weight: 900; margin-top: 6px; letter-spacing: 0.3px;">公益財団法人 環日本海環境協力センター（NPEC）</div>
+        <h3 style="font-size: 14px; margin: 0 0 6px 0; color: #5a4216; font-weight: 900; text-transform: uppercase; border-bottom: 2px solid #c9beaa; padding-bottom: 4px; text-align: left; display: inline-block; padding-right: 20px; letter-spacing: 0.5px;">事務局</h3>
+        <div class="text-base sm:text-lg" style="color: #000000; line-height: 1.4; text-align: left; font-weight: 800; margin-top: 6px; letter-spacing: 0.3px;">公益財団法人 環日本海環境協力センター（NPEC）</div>
       </div>
-      <div style="background: rgba(255, 255, 255, 0.85); padding: 10px 20px; border-radius: 6px; display: inline-flex; align-items: center; justify-content: center; border: 1px solid #c9beaa; box-shadow: inset 0 1px 3px rgba(0,0,0,0.05);">
+      <div style="background: rgba(255, 255, 255, 0.9); padding: 10px 20px; border-radius: 8px; display: inline-flex; align-items: center; justify-content: center; border: 1px solid #dcd6c8; box-shadow: inset 0 1px 3px rgba(0,0,0,0.05);">
         <a href="https://www.npec.or.jp/" target="_blank" rel="noopener noreferrer" style="line-height: 0;">
-          <img src="https://cearac.nowpap.org/nowpap/wp-content/uploads/2025/03/82npec_LOGO.png" alt="NPEC 事務局" style="height: 40px; width: auto; vertical-align: middle;">
+          <img src="https://cearac.nowpap.org/nowpap/wp-content/uploads/2025/03/82npec_LOGO.png" alt="NPEC 事務局" style="height: 42px; width: auto; vertical-align: middle;">
         </a>
       </div>
     </div>
 
   </div>
 
-  <div style="padding: 24px 0; border-top: 1px solid #f1f5f9; text-align: center; margin-top: 35px;">
+  <!-- コピーライト（フッター） -->
+  <div style="padding: 24px 0; border-top: 1px solid #e2e8f0; text-align: center; margin-top: 45px;">
     <p style="margin: 0; font-size: 12px; color: #94a3b8;">&copy; 2026 Northwest Pacific Region Environmental Cooperation Center (NPEC)</p>
   </div>
 </div>
